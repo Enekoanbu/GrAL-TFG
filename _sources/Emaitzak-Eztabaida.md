@@ -1,10 +1,10 @@
-# Sorgailuaren Diseinua
+# Emaitzak eta Eztabaida
 
-## Oinarria
+## Oinarri Teorikoa
 
 Breve introducción al capítulo.
 
-## Sección 1
+## Diseinua
 
 Contenido de la sección 1.
 
@@ -14,4 +14,4 @@ Contenido de la subsección 1.1.
 
 #### Nota
 
-Esta es una nota importante relacionada con la subsección 1.1.
+Esta es una nota importante relacionada con la subsección 1.1
