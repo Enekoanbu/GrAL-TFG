@@ -2,7 +2,17 @@
 
 ## Oinarri Teorikoa
 
-Sarreran aipatu bezala, gaur egungo gizartearentzat ezagunak diren aerosorgailu bakarrak **HAWT**-ak ("*Horizontal Axis Wind-Turbine*") dira. Hala ere, haizea erabiliz funtzionatzen duten energia-iturri bakarra izatetik urrun daude, ardatz horizontala dutenak ez ezik ardatz bertikala duten sorgailu anitz garatu dira azken urte hauetan.
+Savonius motako sorgailua zergatik aukeratu dugun ulertzeko, lehenik beste aerosorgailuekiko dituen abantailak zeintzuk diren kontuan izan behar dugu. Bi multzotan sailkatzen dira haize-errotak, ardatz bertikaldunak (**VAWT**-ak, "*Vertical Axis Wind-Turbine*"-ak) eta ardatz horizontaldunak (**HAWT**-ak, "*Horizontal Axis Wind-Turbine*"-ak). Mota desberdinen portaera aztertzeko literaturan(esaterako, {cite:t}`AKWA20123054` , {cite:t}`UPV2019` eta {cite:t}`chimaldiseno` artikuluetan) gehien zabalduta dagoen konparaketa grafikoa batazbesteko eraginkortasun-koefizientea puntako abiaduraren proportzioarekin ($\frac{wr}{V_0}$ non w abiadura angeluarra, r errotorearen erradioa eta $V_0$ eragozpenik gabeko haizearen abiadura diren)
+
+```{figure} ./Irudiak/DiferentesTipos.png
+---
+height: 400px
+name: HaizeErrotaMotak
+---
+Aerosorgailu mota desberdinen funtzionamenduaren analisia, $C_p$ eraginkortasun-koefizientea $\lambda$ puntako abiaduraren eta haizearen abiaduraren proportzioaren menpe irudikatuz. {cite:ps}`AKWA20123054`
+```
+
+{numref}`HaizeErrotaMotak`-an ikusi dezakegun bezala, 
 
 
 

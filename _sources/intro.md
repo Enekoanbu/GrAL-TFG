@@ -11,7 +11,7 @@ Gaur egungo gizartearen zeregin handienetako bat energia berriztagarrietarako tr
 Hau guztia esanik, ba al dago energia berriztagarririk, zeinak arazo guzti hauek gabe, etxeetan instalatzeko aukera ematen duen? Galdera honen erantzuna haize-energia izan daiteke. Gainera, denontzako ezagunak diren haize-errota haundiez gain badira bakoitzaren etxeetan, herri edo hiri baten barruan, instalatzeko aukera eskeintzen duten sorgailuak, VAWT-ak, "*Vertical Axis Wind-Turbine" delakoak.
 
 ```{image} ./Irudiak/RotorPortada.jpg
-:alt: fishy
+:alt: RotorPortada
 :class: bg-primary mb-1
 :width: 500px
 :align: center
