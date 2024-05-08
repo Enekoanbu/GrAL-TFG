@@ -1,8 +1,8 @@
 # Savonius motako sorgailu eoliko baten eraikuntza eta errotore desberdinen azterketa
 
-## Sarrera
+## Laburpena
 
-Lan honetan ardatz bertikaleko aerosorgailuen funtzionamendua aztertzen da, *Savonius* motako sorgailuetan zentratuko da lana, zehazki. Azterketa aurrera eramateko, lehenik aipaturiko motako aerosorgailu baten diseinua eta muntaia egingo da eta, ondoren, egindako muntaiko errotoreak aldatuz bakoitzaren eraginkortasuna behatuko da. Errotoreak sortzeko **3D Inprimagailua** erabiliko da eta [Autodesk Fusion](https://www.autodesk.es/products/fusion-360/overview?term=1-YEAR&tab=subscription) programa erabiliko da diseinuak egiteko. Bestalde, jarduera esperimentaleko emaitzak biltzeko zirkuitu elektronikoak [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3/) plaka bat izango du txertatuta.
+Lan honetan ardatz bertikaleko aerosorgailuen funtzionamendua aztertzen da, zehazki, *Savonius* motako sorgailuetan zentratuko da lana. Eraikinetan mota honetako haize-errotak instalatzearen egokitasunaren zergatia azalduko da. Bestalde, azterketa aurrera eramateko, lehenik aipaturiko motako aerosorgailu baten diseinua eta muntaia egingo da eta, ondoren, egindako muntaiko errotoreak aldatuz bakoitzaren eraginkortasuna behatuko da. Errotoreak sortzeko **3D Inprimagailua** erabiliko da eta [Autodesk Fusion](https://www.autodesk.es/products/fusion-360/overview?term=1-YEAR&tab=subscription) programa erabiliko da diseinuak egiteko. Bestalde, jarduera esperimentaleko emaitzak biltzeko zirkuitu elektronikoak [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3/) plaka bat izango du txertatuta.
 
 ## Motibazioa
 
