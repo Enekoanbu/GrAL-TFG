@@ -8,13 +8,14 @@ Lan honetan ardatz bertikaleko aerosorgailuen funtzionamendua aztertzen da, zeha
 
 Gaur egungo gizartearen zeregin handienetako bat energia berriztagarrietarako trantsizioa ematea da zientzialari askoren iritziz. Helburu honen alde norbanako bakoitzak gehitu dezakeen apurra  ematea garrantzitsua da, baina benetan zer egin daiteke gure egunerokoan energia berriztagarriak sustatzeko? Oraingoz, norbaitek bere etxean energia berriztagarririk izan nahi badu aukera nagusua (eta ia bakarra) eguzki-panelen instalazioa da. Hala ere, hauek arazo ugari dauzkate: Bakarrik egunez sortzen dute energia, eguraldiaren arabera urte sasoi batzuetan bereien errendimendua asko jeitsi daiteke, mantenimendu ugari behar dute klimaren higaduraren menpe baitaude eta, gainera, panelak eraikitzeko prozesuan ingurumenaren gaineko eragina nahiko handia da. Honetaz gain, instalazio prozesua ez da merkea eta, gaur egun, jende gutxiren eskura dago. 
 
-Hau guztia esanik, ba al dago energia berriztagarririk, zeinak arazo guzti hauek gabe, etxeetan instalatzeko aukera ematen duen? Galdera honen erantzuna haize-energia izan daiteke. Gainera, denontzako ezagunak diren haize-errota haundiez gain badira bakoitzaren etxeetan, herri edo hiri baten barruan, instalatzeko aukera eskeintzen duten sorgailuak, VAWT-ak, "*Vertical Axis Wind-Turbine" delakoak.
+Hau guztia esanik, ba al dago energia berriztagarririk, zeinak arazo guzti hauek gabe, bizi garen eraikinetan instalatzeko aukera ematen duen? Galdera honen erantzuna haize-energia izan daiteke. Gainera, denontzako ezagunak diren haize-errota haundiez gain badira herri edo hiri baten barruan   instalatzeko aukera eskeintzen duten sorgailuak. Lan honetan, zehazki, Savonius motako haize-erroten aipatutako zedea betetzeko egokitasuna aztertuko da.
 
-```{image} ./Irudiak/RotorPortada.jpg
-:alt: RotorPortada
-:class: bg-primary mb-1
-:width: 500px
-:align: center
+```{figure} ./Irudiak/RotorPortada.jpg
+---
+scale: 20%
+align: center
+name: RotorPortada
+---
 ```
 
 ## Helburuak
