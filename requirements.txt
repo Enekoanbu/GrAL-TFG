@@ -1,4 +1,4 @@
 jupyter-book
-myst==1.0.0
+myst
 matplotlib
 numpy
