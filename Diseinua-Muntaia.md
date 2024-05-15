@@ -2,7 +2,7 @@
 
 ## Diseinua
 
-Contenido de la sección 1.
+Dideinu egoki bat aukeratzea ez da lan erraza
 
 ### Subsección 1.1
 
