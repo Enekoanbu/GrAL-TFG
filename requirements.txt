@@ -1,0 +1,8 @@
+jupyter-book
+torchaudio-augmentations
+librosa==0.8.1
+matplotlib
+numpy
+tqdm
+ghp-import
+seaborn
