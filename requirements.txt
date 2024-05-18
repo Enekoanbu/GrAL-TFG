@@ -19,5 +19,4 @@ sympy
 latex
 pybtex
 fonttools
-myst-docutils
 wheel
