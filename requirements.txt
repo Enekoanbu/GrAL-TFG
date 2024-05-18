@@ -2,3 +2,17 @@ jupyter-book
 myst
 matplotlib
 numpy
+altair
+bokeh
+folium
+ipywidgets
+jupytext
+nbclient
+pandas
+plotly
+sphinx-click
+sphinx-examples
+sphinx_inline_tabs
+sphinx-proof
+sphinxext-rediraffe~=0.2.3
+sympy
