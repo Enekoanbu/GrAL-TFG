@@ -17,4 +17,4 @@ sphinx-proof
 sphinxext-rediraffe~=0.2.3
 sympy
 latex
-amsmath
+pybtex
