@@ -10,7 +10,7 @@ scale: 30%
 align: center
 name: Sav1
 ---
-Savonius errotore sinple baten adierazpen eskematikoa. a) 2D-ko bista errotorea erditik ebakitzen badugu. b) 3D-ko irudikapena. c) Haizearen eraginpean errotoreak duen portaeraren eskema.
+Savonius errotore sinple baten adierazpen eskematikoa. a) 2D-ko bista errotorea erditik ebakitzen badugu. b) 3D-ko irudikapena. c) Haizearen eraginpean errotoreak duen portaeraren eskema. {cite:ps}`AKWA20123054`
     
 ```
 
@@ -70,3 +70,10 @@ Aerosorgailu mota desberdinen $C_t$ momentu-koefizienteak, $\lambda$-ren funtzio
 - Errotorearen palen azaleraren eta proiektatutako errotore osoarenaren arteko proportzioa (ingelesez "*Solidity Ratio*" delakoa) ia unitatearen parekoa da. Arrazoi honegaitik, errotorearen egiturak bultzada indar handiak jasaten ditu.
 - Aurreko arrazoi berdinagatik, errotorearen tamaina handia da muntai osoaren tamainarekin konparatuz. Hots, prototipoaren eskala haundituz gero, errotorearen tamaina eraikinezina bilakatu daiteke, esaterako, hiru paladun haize-errota ezagun eta handien eskalako Savonius sorgailuak eraikitzea ezinezkoa da. Honek ere mota honetako errotoreak eraikitzeko material eskaera handitzen du.
 - Azkenik, Savonius haize-sorgailuen desabantailarik handiena eraginkortasun edo potentzia koefiziente baxua izatea da. 
+
+## Savonius-ak Erabilgarriak diren Testuinguruak.
+
+Errotore hauek zein testuingurutan diren baliagarriak 
+
+
+
