@@ -1,3 +1,3 @@
 jupyter-book
 myst-parser==0.15.0
-
+bundle
