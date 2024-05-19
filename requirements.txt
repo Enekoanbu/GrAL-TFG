@@ -133,7 +133,7 @@ sphinxcontrib-bibtex==2.6.2
 sphinxcontrib-devhelp
 sphinxcontrib-htmlhelp
 sphinxcontrib-jsmath==1.0.1
-sphinxcontrib-qthelp==1.0.7
+sphinxcontrib-qthelp
 sphinxcontrib-serializinghtml==1.1.10
 SQLAlchemy==2.0.29
 stack-data==0.6.3
