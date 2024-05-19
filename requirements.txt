@@ -39,7 +39,7 @@ ImageMagic==0.2.1
 imagesize==1.4.1
 importlib_metadata==7.1.0
 ipykernel==6.29.4
-ipython==8.23.0
+ipython
 isoduration==20.11.0
 jb==1.0.0
 jedi==0.19.1
