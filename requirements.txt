@@ -94,7 +94,7 @@ pure-eval==0.2.2
 pybtex==0.24.0
 pybtex-docutils==1.0.3
 pycparser==2.22
-pydata-sphinx-theme==0.15.2
+pydata-sphinx-theme
 pyee==11.1.0
 Pygments==2.17.2
 PyLaTeX==1.4.2
