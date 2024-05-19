@@ -134,7 +134,7 @@ sphinxcontrib-devhelp
 sphinxcontrib-htmlhelp
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp
-sphinxcontrib-serializinghtml==1.1.10
+sphinxcontrib-serializinghtml
 SQLAlchemy==2.0.29
 stack-data==0.6.3
 tabulate==0.9.0
