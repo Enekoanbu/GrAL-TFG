@@ -1,4 +1,4 @@
 jupyter-book
 matplotlib
 numpy
-myst-nb
+myst-parser
