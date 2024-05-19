@@ -131,7 +131,7 @@ sphinx_external_toc
 sphinxcontrib-applehelp
 sphinxcontrib-bibtex==2.6.2
 sphinxcontrib-devhelp
-sphinxcontrib-htmlhelp==2.0.5
+sphinxcontrib-htmlhelp
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.7
 sphinxcontrib-serializinghtml==1.1.10
