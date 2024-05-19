@@ -1,4 +1,4 @@
 jupyter-book
 matplotlib
 numpy
-myst-parser
+sphinx==5.0.0
