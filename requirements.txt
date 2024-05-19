@@ -70,7 +70,7 @@ matplotlib-inline==0.1.6
 mdit-py-plugins==0.3.5
 mdurl==0.1.2
 mistune==3.0.2
-myst-nb==1.1.0
+myst-nb
 myst-parser==1.0.0
 nbclient==0.10.0
 nbconvert==7.16.4
