@@ -60,8 +60,3 @@ sphinx:
       - myst_parser
       - sphinx.ext.mathjax
     bibtex_reference_style: author_year
-    mathjax_config:
-        mathjax_path: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"
-        mathjax_config:
-          TeX:
-            equationNumbers: { autoNumber: "AMS" }
