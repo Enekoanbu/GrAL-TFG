@@ -28,15 +28,13 @@ parse:
     - substitution
     - tasklist
 
-
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: Proba1_tfg.tex
-    title: "Savonius motako sorgailu eoliko baten eraikuntza eta errotore desberdinen azterketa"
-    author: "Eneko Aranburu Aramendi"
+    - targetname: Proba1_tfg.tex
+      title: "Savonius motako sorgailu eoliko baten eraikuntza eta errotore desberdinen azterketa"
+      author: "Eneko Aranburu Aramendi"
   latex_engine: pdflatex
-
 
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
@@ -53,10 +51,14 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  
+
 sphinx:
   config:
     extensions:
       - myst_parser
       - sphinx.ext.mathjax
+    mathjax_config:
+      TeX:
+        equationNumbers: { autoNumber: "AMS" }
     bibtex_reference_style: author_year
+
