@@ -1,7 +1,7 @@
-jupyter-book
+jupyter-book==0.15.1
 matplotlib
 numpy
 sphinx==5.0.0
-myst-nb
-myst-parser==0.18.0
-nbclient<0.8
+myst-nb==0.17.2
+myst-parser==0.18.1
+nbclient==0.5.13
