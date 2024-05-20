@@ -11,7 +11,7 @@ only_build_toc_files: false
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
-  
+
 parse:
   myst_enable_extensions:
     - amsmath
@@ -57,4 +57,12 @@ html:
   
 sphinx:
   config:
+    extensions:
+      - myst_parser
+      - sphinx.ext.mathjax
     bibtex_reference_style: author_year
+    mathjax_config:
+        mathjax_path: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"
+        mathjax_config:
+          TeX:
+            equationNumbers: { autoNumber: "AMS" }
