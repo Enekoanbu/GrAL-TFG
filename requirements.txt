@@ -4,5 +4,6 @@ numpy
 sphinx==5.0.0
 PyLaTeX
 mathjax
+myst-nb
 myst-parser==0.18.0
 nbclient<0.8
