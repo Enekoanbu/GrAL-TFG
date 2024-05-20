@@ -4,3 +4,4 @@ numpy
 sphinx==5.0.0
 PyLaTeX
 mathjax
+myst-parser
