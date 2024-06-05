@@ -60,20 +60,26 @@ Aerosorgailu mota desberdinen $C_t$ momentu-koefizienteak, $\lambda$-ren funtzio
 
 ### Abantailak
 
-- Diseinua sinplea da eta eraikitzeko zailtasun baxua dauka, beste sorgailu eolikoekin konparatuz gero. Honek garapen bidean dauden herrialdeetan instalazioa asko errazten du.
+- Diseinua sinplea da eta eraikitzeko zailtasun baxua dauka, beste sorgailu eolikoekin konparatuz gero.
 - Momentu koefiziente altua dauka, beraz, bai momentu dinamiko eta bai estatiko altua sortzeko gai da. Honek biratzen hasterakoan beste errotoreek baino momentu altuagoa sortzea ahalbidetzen du eta momentu handia beharrezkoa den erabiletarako egokia izan daiteke, adibidez, ura ponpatzeko.
 - Haizea edozein norabideetatik jasotzeko aukera daukate. Propietate honek, **VAWT** motakoekin alderatuz, inplementazio erraztasun handiagoa ematen dio, ez baita beharrezkoa errotorea haizearen norantzkoan orientatzeko sistema automatiko konplexurik ezartzea edo, eskala txikiko erabiletarako, ez da beharrezkoa denbora eta esfortzua sorgailua ondo orientatzen xahutzea.
 - {numref}`HaizeErrotaMotak`, {numref}`HaizeErrotaMotak2` eta {numref}`MomentuKoefizienteak` grafika guztietan behatu dezakegu mota honetako generadoreak **TSR** baxuenekoak direla. Honek eragin zuzena dauka sortutako zaratan, Savoniusak izanik zarata maila baxuenetakoa sortzen duten errotoreak. Hau oso propietate garrantzitsua da gizakion bizilekuetatik hurbil instalazioa ahalbidetzeko.
 
 ### Desabantailak
 
-- Errotorearen palen azaleraren eta proiektatutako errotore osoarenaren arteko proportzioa (ingelesez "*Solidity Ratio*" delakoa) ia unitatearen parekoa da. Arrazoi honegaitik, errotorearen egiturak bultzada indar handiak jasaten ditu.
-- Aurreko arrazoi berdinagatik, errotorearen tamaina handia da muntai osoaren tamainarekin konparatuz. Hots, prototipoaren eskala haundituz gero, errotorearen tamaina eraikinezina bilakatu daiteke, esaterako, hiru paladun haize-errota ezagun eta handien eskalako Savonius sorgailuak eraikitzea ezinezkoa da. Honek ere mota honetako errotoreak eraikitzeko material eskaera handitzen du.
-- Azkenik, Savonius haize-sorgailuen desabantailarik handiena eraginkortasun edo potentzia koefiziente baxua izatea da. 
+- Errotorearen palen azaleraren eta proiektatutako errotore osoarenaren arteko proportzioa (ingelesez "*Solidity Ratio*" delakoa) ia unitatearen parekoa da eta, beraz, errotorearen egiturak bultzada indar handiak jasaten ditu.
+- Aurreko arrazoi berdinagatik, errotorearen tamaina handia da muntai osoaren tamainarekin konparatuz. Hots, prototipoaren eskala haundituz gero, errotorearen tamaina eraikinezina bilakatu daiteke, esaterako, hiru paladun haize-errota ezagun eta handien eskalako Savonius sorgailuak eraikitzea ezinezkoa da.
+- Azkenik, Savonius haize-sorgailuen desabantailarik handiena eraginkortasun edo potentzia koefiziente baxua izatea da.
 
 ## Savonius-ak Erabilgarriak diren Testuinguruak.
 
-Errotore hauek zein testuingurutan diren baliagarriak 
+Aurkeztutako bere aldeko argudioak eta kontrakoak ikusiz erretore honen erabilera abantalagarria izan daitekeen testuinguruak zeintzuk diren ondorioeztatu daiteke. Esaterako, bere diseinu sinpleak garapen bidean dauden herrialdeetan horrelako sistemak inplementatzeko aukera ematen du, ez baita beharrezko makineria astuna behar euren produkziorako. Gainera, nahiz eta lan honetan aerosorgailu bezalako aplikazioa soilik landu, mota honetako errotoreek uraren indarraz bultzatuta ere funtziona dezakete eta, beraz, ura ponpatzeko egokiak dira.
+
+Bestalde, herrilade garatuetan ere abantaila handiak ematen dizkigute mota honetako aerosorgailuek. Sarreran aipatu bezala, norbanakoen bizitokietan energia berriztagarrien erabilera eta instalazioa sustatzea da gaur egungo gizartearen ardura nagusienetako bat. Horretarako, abantailetan adierazi den bezala, oso garrantzitsua da sorgailuak zarata maila baxuak izatea, izan ere, haize-errota handien desabantaila nagusienetako bat sortzen duten kutsadura akustikoa da. Zarata honek gertu bizi diren gizakiengan, adibidez, antsietatea bezalako osasun arazoak agertarazi ditzake eta, hortaz, garrantzitsua da zarata mailak ondo kontrolatzea eta parke eolikoen kokaera egokia aukeratzea, {cite:ps}`Soinu` artikuluan proposatzen den moduan. Arrazoi honegaitik bereziki da beharrazkoa TSR baxua izatea, errotore batek sortutako zarata eta bere palen abiadura proportzionalak baitira. Savonius motako errotoreek baldintza hau oso ondo betetzen dute, gorago aurkeztutako hiru grafiketan ikusi daitekeen bezala.
+
+Horrelako erabiletarako ere garrantzitsua da ahalik eta automatikoena izatea sistema, adibidez, ardatz bertikaleko aerosorgailuen kasuan, energia sortzeko ez dutela haizearen norantzkoan orientaturik egon beharrik eta, beraz, ez da beharrezkoa euren orientazioa aldatzea edo hau automatikoki egiten duen sistema konplexu bat eraikitzea.
+
+Beraz, Savonius motako aerosorgailuek aurreko bi kasuetan, nagusiki, izango dituzte abantailak beste haize-erroten aurrean. Kontextu hauek buruan izanik burutuko da jarduera esperimentala, aipatutako kasuetarako egokitasuna frogatze aldera eta mota honetako errotoreen palen forma egokiena bilatzeko helburuarekin.
 
 
 
