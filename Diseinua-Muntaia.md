@@ -29,7 +29,7 @@ name: Prototipo1.1
 {numref}`Prototipo1` irudian aurkeztutako muntaiatik moldatutako diseinua. 
 ```
 
-{numref}`Prototipo1.1`-an aurkezten da egindako moldaketa. Aipatu bezala, oinarria asto bat da eta bere barnean altuera desberdinetan bi egurrezko xafla jartzea da diseinu honen atzean dagoen idea, ondoren, metro erdi inguruko altueradun errotorea horien artean muntatzeko.
+{numref}`Prototipo1.1`-an aurkezten da egindako moldaketa. Aipatu bezala, oinarria asto bat da eta bere barnean altuera desberdinetan bi egurrezko xafla jartzea da diseinu honen atzean dagoen idea. Ondoren, metro erdi inguruko altueradun errotorea horien artean muntatzen da eta hau aldatzeko aukera izateko goiko tapa ez da guztiz finkoa.
 #### Nota
 
 Esta es una nota importante relacionada con la subsección 1.1
