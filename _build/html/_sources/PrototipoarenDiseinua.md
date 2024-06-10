@@ -1,10 +1,8 @@
-# Prototipoaren Eraikuntza
-
-## Diseinua
+# Prototipoaren Diseinua
 
 Prototipo egokiena eraiki ahal izateko oso garrantzitsua da diseinu prozesu on bat burutzea. Kasu honetan, lan batzuk aztertu ondoren, haietan topaturiko prototipo onenetan oinarriturik diseinu batzuk burutu dira eta, gogoeta prozesu baten ondoren, abantaila gehienak batzen dituen diseinua egin da, ahalik eta desabantaila gehienei soluzio bat emanez. 3D diseinuak egiteko [Autodesk Fusion 360](https://www.autodesk.com/es/products/fusion-360/overview?mktvar002=6347438|SEM|21086132778|159352180746|kwd-54914936374&utm_source=GGL&utm_medium=SEM&utm_campaign=GGL_D-M_Fusion-360_EMEA_ES_eComm_SEM_BR_NA_MIX_0064_6347438&utm_id=6347438&utm_term=kwd-54914936374&mkwid=s|pcrid|693284525029|pkw|fusion%20360|pmt|b|pdv|c|slid||pgrid|159352180746|ptaid|kwd-54914936374|pid|&utm_medium=cpc&utm_source=google&utm_campaign&utm_term=fusion%20360&utm_content=s|pcrid|693284525029|pkw|fusion%20360|pmt|b|pdv|c|slid||pgrid|159352180746|ptaid|kwd-54914936374|&gad_source=1&gclid=Cj0KCQjwpZWzBhC0ARIsACvjWRN849MwZlMLkt2flRqmva05ehqWhsdmzy1eGPcSuq20g_F-_bpB3TUaAt5VEALw_wcB&ef_id=YccZlwAAAJBcogQD:20240609090050:s&term=1-YEAR&tab=subscription&plc=FSN) programa erabili da. 
 
-### 1. Prototipoa
+## 1. Prototipoa
 
 Lehenengo diseinu hau {cite:ps}`Salazar2019` artikuluan egindakoan oinarritzen da. Kasu honetan euskarri moduan lau hankadun triangulu itxurako egitura bat erabiltzen da.
 
@@ -32,7 +30,7 @@ name: Prototipo1.1
 
 Hala ere, diseinu honek hainbat eragozpen ditu. Hasteko, errotorearen inguruko egiturak haizea norabide horietatik etortzea eragotziko du eta, beraz, gure sorgailua ez da edozein noranzkotik datorren haizetik energia lortzeko gai izango. Gainera, muntai prozesuari dagokionez, zailtasun ugari dauzka, aurretik prefabrikatutako egitura bat nahi dugun neurrietara egokitzea ez baita erraza. Esterako, goiko eta beheko oinarrien artean metro erdi inguruko altuera behar izateak astoaren zeharkako egurren posizioa aldatzera behartzen gaitu eta hau egiteko prozesua asko konplikatu daiteke ez bada, kasu honetan bezala, tresneria berezirik izaten. Azkenik, errotoreak aldatzeak arazoak ekarri ditzake. Nahiz eta goiko tapa ez finkatu guztiz, astoaren egiturak honen mugimendua mugatzen du eta, beraz, bisagrak jartzean posiblea da ez izatea errotoreak aldatzeko prozesua nahi bezain erosoa.
 
-### 2. Prototipoa
+## 2. Prototipoa
 
 Bigarren diseinua {cite:ps}`UPV2019` lanean oinarrituta dago. Oraingo honetan marko moduan erabiltzen den egitura sinpleagoa da, baina egonkortasuna lortzeko pareta bateara lotzeko beharra dauka.
 
@@ -49,7 +47,7 @@ Bigarren diseinua egiteko oinarri bezala erabili den egitua {cite:ps}`UPV2019`.
 
 Bigarrenik, sorgailu moduan erabiliko dugun motorra kokatzeko lekua oso mugatua dago eta ez da erraza proiektu honetarako diseinatu den zirkuitu bertan jartzea. Gainera, sortu nahi den prototipoa Euskal Herriko klimara ahal den einean moldatua izatea nahi denez, ondo legoke prezipitazioetatik babesteko zirkuitua kaxa edo antzerako zerbaiten barruan kokatzea eta diseinu honek ez dauka horrelako egiturarik eta bere instalazioa zaila izan daiteke egitura nagusira itsasteko espazio gutxi baitu.
 
-### Aukeratutako Prototipoa
+## Aukeratutako Prototipoa
 
 Aurreko bi kasuak behatzen baditugu, biek aurkezten duten arazo garrantzitsuena berdina da: **VAWT**-en abantaila handienetako bat galtzen da, haizearen norabidearen menpekotasun eza. Arazo honi soluzio bat emateko, 1.Prototipoan erabiltzen den egitura zabal eta konplexua erabili ordez, 2.Prototipoko egitura sinple erabiliko da, baina estabilitatea lortzeko pareta batera lotu ordez, oinarri pisutxu eta egonkor bat erabiliko da.
 
@@ -75,12 +73,13 @@ Azken Prototipoari estatore palak gehitzean lorturiko diseinua.
 
 {numref}`Prototipo3_1` irudiko diseinuan estatore palak gehitu dira. Hauek {numref}`Prototipo1.1`-ean ere ageri dira eta definizioz mugikorrak ez diren errotoreen hego itxurako osagaiak dira. Nahiz eta energiarik zuzenenan ez sortu, haizearen noranzkoa errotorerantz zuzentzeko balio dute eta, beraz, errotorearen gaineko presioa handitzea eragin dezakete. Gainera, gure dizeinuaren kasuan, egonkortasun handiagoa ematen diote egiturari. Jarduera esperimentalean sorgailu eolikoaren eraginkortasunean hauek izan dezaketen eragina aztertuko da.  
 
-## Muntaia
+```{figure} ./Irudiak/Marko4_2.png
+---
+scale: 70%
+align: center
+name: Prototipo3_2
+---
+Errotorea ahalik eta marruskadura txikienarekin eusteko eta motorrera konektatzeko diseinaturako euskarri sistema.
+```
 
-### 3D Inprimagailuaren Erabilera
-
-## Zati Elektronikoa
-
-### Zirkuitu Elektrikoa
-
-### Arduino Bdezko Programa
+Direinuaren gakoetako bat errotorea eta sorgailua lotzeko modua da. {numref}`Prototipo3_1` irudian erakusten da helburu honekin diseinatutako euskarri sistema. Gorriz agertzen den eraztunak 32 mm-ko kanpo-diametrodun errodamendu bat izango du barne eta azken honen gainean eutsiko da errotore osoa, marruzkadura asko txikituz. Kolore horixkadun pieza guztiak errotorearen parte dira. Ikusi daitekeenez, motorrera lotzeko errotorearen azpiko aldetik 20 mm-ko kanpo-diametroa eta 8mm-ko barne-diametroa duen hodi bat ateratzen da eta motorreko ardatza bere barnean sartzen da, biak torloju baten bidez lotzeko aukera emanez. Goiko oinarriaren kasuan, errodamendu bidezko antzeko sistema bat erabiltzen da, baina ez denez bertara ezer konektatu behar, txikiago bat jartzeko aukera dugu, zehazki 20mm-ko kanpo-diametrodun eta 9mm-ko barne-diametrodun bat erabiltzea pentsatu da.

@@ -7,7 +7,9 @@ options:
   numbered: False
 chapters:
   - file: Oinarria
-  - file: Diseinua-Muntaia
+  - file: PrototipoarenDiseinua
+  - file: ErrotoreenDiseinua
+  - file: Muntaia
   - file: Esperimentuak
   - file: Emaitzak-Eztabaida
   - file: Ondorioak
