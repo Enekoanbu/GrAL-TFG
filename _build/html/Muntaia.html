@@ -462,6 +462,28 @@ document.write(`
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="zati-elektronikoa">
 <h1>Zati Elektronikoa<a class="headerlink" href="#zati-elektronikoa" title="Link to this heading">#</a></h1>
+<p>Elektronikaren aldetik, prototipoak datuak lortu eta terminal batera bidaltzeko bi plaka base desberdin erabiliko dira, <a class="reference external" href="https://docs.arduino.cc/hardware/uno-rev3/">Arduino UNO R3</a> eta <a class="reference external" href="https://www.nodemcu.com/index_en.html">NodeMCU v3 ESP8266</a>. Bi plaka hauen artean serie konexioa ezarri da datuak elkartrukatzeko.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="arduinouno">
+<a class="reference internal image-reference" href="_images/ArduinoUNO.jpeg"><img alt="_images/ArduinoUNO.jpeg" src="_images/ArduinoUNO.jpeg" style="height: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text"><em>Arduino UNO R3</em> plaka basea.</span><a class="headerlink" href="#arduinouno" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="nodemcu">
+<a class="reference internal image-reference" href="_images/NodeMCU.jpg"><img alt="_images/NodeMCU.jpg" src="_images/NodeMCU.jpg" style="height: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text"><em>ESP8266</em> txipa barne duen <em>NodeMCU v3</em> plaka basea.</span><a class="headerlink" href="#nodemcu" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Biak batera erabiltzeko arrazoi nagusia elkarren osagarriak direla da. Arduino UNO mota honetako plaka sinpleena da eta tentsioak neurtzeko behar ditugun 2 pin analogikoak izateko aukera ematen digu. Aldiz, NodeMCU-ak bakarrik pin analogiko bakarra dauka, baina ESP8266 txiparen bitartez WiFi bidezko konexioa izateko aukera ematen digu. Konexio honen bidez lortutako datuak automatikoki <a class="reference external" href="https://thingspeak.com/">ThingSpeak</a> orrira bidaltzen ditu eta horrela edozein momentutan eta edonon gure errotorea sortzen ari den tentsioa ikusteko aukera daukagu.</p>
 <section id="zirkuitu-elektrikoa">
 <h2>Zirkuitu Elektrikoa<a class="headerlink" href="#zirkuitu-elektrikoa" title="Link to this heading">#</a></h2>
 </section>

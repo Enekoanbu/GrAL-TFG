@@ -55,6 +55,33 @@ Eraikuntza prozesuaren amaieran lortutako prototipoa, {ref}`EDiseinua1` erdibitu
 
 # Zati Elektronikoa
 
+Elektronikaren aldetik, prototipoak datuak lortu eta terminal batera bidaltzeko bi plaka base desberdin erabiliko dira, [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3/) eta [NodeMCU v3 ESP8266](https://www.nodemcu.com/index_en.html). Bi plaka hauen artean serie konexioa ezarri da datuak elkartrukatzeko.
+
+::::{grid}
+:gutter: 0
+
+:::{grid-item}
+```{figure} ./Irudiak/ArduinoUNO.jpeg
+---
+height: 250px
+name: ArduinoUNO
+---
+*Arduino UNO R3* plaka basea.
+```
+:::
+:::{grid-item}
+```{figure} ./Irudiak/NodeMCU.jpg
+---
+height: 250px
+name: NodeMCU
+---
+*ESP8266* txipa barne duen *NodeMCU v3* plaka basea.
+```
+:::
+::::
+
+Biak batera erabiltzeko arrazoi nagusia elkarren osagarriak direla da. Arduino UNO mota honetako plaka sinpleena da eta tentsioak neurtzeko behar ditugun 2 pin analogikoak izateko aukera ematen digu. Aldiz, NodeMCU-ak bakarrik pin analogiko bakarra dauka, baina ESP8266 txiparen bitartez WiFi bidezko konexioa izateko aukera ematen digu. Konexio honen bidez lortutako datuak automatikoki [ThingSpeak](https://thingspeak.com/) orrira bidaltzen ditu eta horrela edozein momentutan eta edonon gure errotorea sortzen ari den tentsioa ikusteko aukera daukagu.
+
 ## Zirkuitu Elektrikoa
 
 ## Arduino Bidezko Programa
