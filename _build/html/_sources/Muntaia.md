@@ -80,8 +80,6 @@ name: NodeMCU
 :::
 ::::
 
-Biak batera erabiltzeko arrazoi nagusia elkarren osagarriak direla da. Arduino UNO mota honetako plaka sinpleena da eta tentsioak neurtzeko behar ditugun 2 pin analogikoak izateko aukera ematen digu. Aldiz, NodeMCU-ak bakarrik pin analogiko bakarra dauka, baina ESP8266 txiparen bitartez WiFi bidezko konexioa izateko aukera ematen digu. Konexio honen bidez lortutako datuak automatikoki [ThingSpeak](https://thingspeak.com/) orrira bidaltzen ditu eta horrela edozein momentutan eta edonon gure errotorea sortzen ari den tentsioa ikusteko aukera daukagu.
+Biak batera erabiltzeko arrazoi nagusia elkarren osagarriak direla da. Arduino UNO mota honetako plaka sinpleena da eta tentsioak neurtzeko behar ditugun 2 pin analogikoak izateko aukera ematen digu. Aldiz, NodeMCU-ak bakarrik pin analogiko bakarra dauka, baina ESP8266 txiparen bitartez WiFi bidezko konexioa izateko aukera ematen digu. Konexio honen bidez lortutako datuak automatikoki [ThingSpeak](https://thingspeak.com/) orrira bidaltzen ditu eta horrela edozein momentutan eta edonon gure errotorea sortzen ari den tentsioa ikusteko aukera daukagu. Hala ere, orri honek soilik 15 segunduro jaso dezake informazioa eta, beraz, nahiz eta sorgailu eolikoaren portaera denboran zehar nolakoa den jakiteko egokia izan, jarduera esperimentaleko behaketak egiteko neurketa tarte hau handiegia da. Arazo hau konpontzeko, Arduino UNO plaka zuzenean lotuko da ordenagailu batekin eta datuak behatzeko [Putty](https://www.putty.org/) programa erabiliko da.
 
-## Zirkuitu Elektrikoa
-
-## Arduino Bidezko Programa
+## Arduino IDE Bidezko Programa

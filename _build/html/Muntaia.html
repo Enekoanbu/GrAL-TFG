@@ -32,10 +32,10 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=ca93fcec" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-examples.css?v=e236af4b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=3437f865" />
@@ -59,7 +59,7 @@
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script src="_static/translations.js?v=b82f52d7"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -401,8 +401,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Prototipoaren Muntaia</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#zati-elektronikoa">Zati Elektronikoa</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zirkuitu-elektrikoa">Zirkuitu Elektrikoa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arduino-bidezko-programa">Arduino Bidezko Programa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arduino-ide-bidezko-programa">Arduino IDE Bidezko Programa</a></li>
 </ul>
 </li>
 </ul>
@@ -483,12 +482,9 @@ document.write(`
 </div>
 </div>
 </div>
-<p>Biak batera erabiltzeko arrazoi nagusia elkarren osagarriak direla da. Arduino UNO mota honetako plaka sinpleena da eta tentsioak neurtzeko behar ditugun 2 pin analogikoak izateko aukera ematen digu. Aldiz, NodeMCU-ak bakarrik pin analogiko bakarra dauka, baina ESP8266 txiparen bitartez WiFi bidezko konexioa izateko aukera ematen digu. Konexio honen bidez lortutako datuak automatikoki <a class="reference external" href="https://thingspeak.com/">ThingSpeak</a> orrira bidaltzen ditu eta horrela edozein momentutan eta edonon gure errotorea sortzen ari den tentsioa ikusteko aukera daukagu.</p>
-<section id="zirkuitu-elektrikoa">
-<h2>Zirkuitu Elektrikoa<a class="headerlink" href="#zirkuitu-elektrikoa" title="Link to this heading">#</a></h2>
-</section>
-<section id="arduino-bidezko-programa">
-<h2>Arduino Bidezko Programa<a class="headerlink" href="#arduino-bidezko-programa" title="Link to this heading">#</a></h2>
+<p>Biak batera erabiltzeko arrazoi nagusia elkarren osagarriak direla da. Arduino UNO mota honetako plaka sinpleena da eta tentsioak neurtzeko behar ditugun 2 pin analogikoak izateko aukera ematen digu. Aldiz, NodeMCU-ak bakarrik pin analogiko bakarra dauka, baina ESP8266 txiparen bitartez WiFi bidezko konexioa izateko aukera ematen digu. Konexio honen bidez lortutako datuak automatikoki <a class="reference external" href="https://thingspeak.com/">ThingSpeak</a> orrira bidaltzen ditu eta horrela edozein momentutan eta edonon gure errotorea sortzen ari den tentsioa ikusteko aukera daukagu. Hala ere, orri honek soilik 15 segunduro jaso dezake informazioa eta, beraz, nahiz eta sorgailu eolikoaren portaera denboran zehar nolakoa den jakiteko egokia izan, jarduera esperimentaleko behaketak egiteko neurketa tarte hau handiegia da. Arazo hau konpontzeko, Arduino UNO plaka zuzenean lotuko da ordenagailu batekin eta datuak behatzeko <a class="reference external" href="https://www.putty.org/">Putty</a> programa erabiliko da.</p>
+<section id="arduino-ide-bidezko-programa">
+<h2>Arduino IDE Bidezko Programa<a class="headerlink" href="#arduino-ide-bidezko-programa" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -558,8 +554,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Prototipoaren Muntaia</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#zati-elektronikoa">Zati Elektronikoa</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zirkuitu-elektrikoa">Zirkuitu Elektrikoa</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arduino-bidezko-programa">Arduino Bidezko Programa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arduino-ide-bidezko-programa">Arduino IDE Bidezko Programa</a></li>
 </ul>
 </li>
 </ul>
