@@ -64,6 +64,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Muntaia';</script>
     <link rel="canonical" href="https://publiconsulting.com/Muntaia.html" />
     <link rel="index" title="Indizea" href="genindex.html" />
@@ -448,9 +450,9 @@ document.write(`
 </div>
 </div>
 </div>
-<p><a class="reference internal" href="#rotoreuskarri"><span class="std std-numref">Fig. 18</span></a> irudian ikusi dezakegun pieza oinarrian jarri dugun U itxurako egituraren gainean eta zentroan kokatuko da eta bere egitekoa <em>61804ZZ</em> errodamendua finkatzea izango da. Errodamendu honen dimentsioak 20mm-ko barne-diametroa, 32mm-ko kanpo-diametroa eta 7mm-ko lodiera dira. Noski, errodamenduaren zuloa, oinarriaren zuloa eta pieza honen zuloa zehaztasun osoz bat etortzea ziurtatu da, errotorearen ardatza jartzean marruskadura minimoa izan dadin.</p>
+<p><a class="reference internal" href="#rotoreuskarri"><span class="std std-numref">Fig. 18</span></a> irudian ikusi dezakegun pieza oinarrian jarri dugun U itxurako egituraren gainean eta zentroan kokatuko da eta bere egitekoa <strong>61804ZZ</strong> errodamendua finkatzea izango da. Errodamendu honen dimentsioak 20mm-ko barne-diametroa, 32mm-ko kanpo-diametroa eta 7mm-ko lodiera dira. Noski, errodamenduaren zuloa, oinarriaren zuloa eta pieza honen zuloa zehaztasun osoz bat etortzea ziurtatu da, errotorearen ardatza jartzean marruskadura minimoa izan dadin.</p>
 <p><a class="reference internal" href="#beraeuskarri"><span class="std std-numref">Fig. 17</span></a> irudian aurkezten zaigu errotorea eta sorgailua lotzeko erabiliko den pieza. Honen ardatzaren kanpo-diametroa bat dator aurretik aipatu den zuloarekin, 20mm-ko diametroa baitu. Aldiz, barne diametroa 8mm-koa da eta honen barnean sartuko da sorgailutik ateratzen den ardatza. Azkenik, biak lotzeko 20mm-ko luzerako torloju bat erabili da pasadore moduan.</p>
-<p>Azkenik, <a class="reference internal" href="#goraeuskarri"><span class="std std-numref">Fig. 16</span></a> irudian errotorean goiko aldetik ardatz bat ateratzeko erabili den pieza erakusten da. Bestalde, goiko oinarrian jarri den errodamendua <em>699ZZ</em> motakoa da eta bere dimentsioak 9mm-ko barne-diametroa, 20mm-ko kanpo-diametroa eta 6mm-ko lodiera dira. Kanpo-diametroa eta lodiera goiko oinarri moduan erabili den gurutzearekin bat etortzen dira eta, errotorearen goiko ardatzaren diametroa 9mm-koa denez, barne-diametroa ere egiturarekin bat etorriko da.</p>
+<p>Azkenik, <a class="reference internal" href="#goraeuskarri"><span class="std std-numref">Fig. 16</span></a> irudian errotorean goiko aldetik ardatz bat ateratzeko erabili den pieza erakusten da. Bestalde, goiko oinarrian jarri den errodamendua <strong>699ZZ</strong> motakoa da eta bere dimentsioak 9mm-ko barne-diametroa, 20mm-ko kanpo-diametroa eta 6mm-ko lodiera dira. Kanpo-diametroa eta lodiera goiko oinarri moduan erabili den gurutzearekin bat etortzen dira eta, errotorearen goiko ardatzaren diametroa 9mm-koa denez, barne-diametroa ere egiturarekin bat etorriko da.</p>
 <p>Bestalde, errotorea eraikitzeko <a class="reference internal" href="#goraeuskarri"><span class="std std-numref">Fig. 16</span></a> eta <a class="reference internal" href="#beraeuskarri"><span class="std std-numref">Fig. 17</span></a> irudietako piezei 300mm-ko diametroko bi plataforma atxikiko zaizkie. Plataforma hauek egurrezko konglomeratuzko 6mm-ko lodiera duen xafla mehe batez eginak daude. Bi hauen artean eraikiko dira <a class="reference internal" href="ErrotoreenDiseinua.html#ediseinua"><span class="std std-ref">Errotoreen Diseinua</span></a> atalean aurkeztutako errotoreak. Aipatu beharra dago hauen hegoak edo palak 3D inprimagailu bidez sortu direla, baina, hego bakoitzaren altuera totala metro erdikoa izatea nahi zenez eta honek inprimagailuaren mugak gainditzen zituenez, pala bakoitza 125mm-ko altuerako lau piezetan inprimatu dela eta, ondoren, elkarri pegatu direla.</p>
 <figure class="align-default" id="prototipofinala">
 <a class="reference internal image-reference" href="_images/PrototipoFinala.jpg"><img alt="_images/PrototipoFinala.jpg" src="_images/PrototipoFinala.jpg" style="height: 400px;" /></a>
@@ -468,7 +470,7 @@ document.write(`
 <figure class="align-default" id="arduinouno">
 <a class="reference internal image-reference" href="_images/ArduinoUNO.jpeg"><img alt="_images/ArduinoUNO.jpeg" src="_images/ArduinoUNO.jpeg" style="height: 250px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text"><em>Arduino UNO R3</em> plaka basea.</span><a class="headerlink" href="#arduinouno" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text"><strong>Arduino UNO R3</strong> plaka basea.</span><a class="headerlink" href="#arduinouno" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
@@ -476,15 +478,177 @@ document.write(`
 <figure class="align-default" id="nodemcu">
 <a class="reference internal image-reference" href="_images/NodeMCU.jpg"><img alt="_images/NodeMCU.jpg" src="_images/NodeMCU.jpg" style="height: 250px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text"><em>ESP8266</em> txipa barne duen <em>NodeMCU v3</em> plaka basea.</span><a class="headerlink" href="#nodemcu" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text"><strong>ESP8266</strong> txipa barne duen <strong>NodeMCU v3</strong> plaka basea.</span><a class="headerlink" href="#nodemcu" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>Biak batera erabiltzeko arrazoi nagusia elkarren osagarriak direla da. Arduino UNO mota honetako plaka sinpleena da eta tentsioak neurtzeko behar ditugun 2 pin analogikoak izateko aukera ematen digu. Aldiz, NodeMCU-ak bakarrik pin analogiko bakarra dauka, baina ESP8266 txiparen bitartez WiFi bidezko konexioa izateko aukera ematen digu. Konexio honen bidez lortutako datuak automatikoki <a class="reference external" href="https://thingspeak.com/">ThingSpeak</a> orrira bidaltzen ditu eta horrela edozein momentutan eta edonon gure errotorea sortzen ari den tentsioa ikusteko aukera daukagu. Hala ere, orri honek soilik 15 segunduro jaso dezake informazioa eta, beraz, nahiz eta sorgailu eolikoaren portaera denboran zehar nolakoa den jakiteko egokia izan, jarduera esperimentaleko behaketak egiteko neurketa tarte hau handiegia da. Arazo hau konpontzeko, Arduino UNO plaka zuzenean lotuko da ordenagailu batekin eta datuak behatzeko <a class="reference external" href="https://www.putty.org/">Putty</a> programa erabiliko da.</p>
+<p>Bi plakez gain, beste hiru osagaik osatuko dute zirkuitua, <strong>FZ0430</strong> tentsioa neurtzeko sentsorea, <strong>KBP410</strong> zubi artezgailua eta <strong>L7805CV</strong> tentsio erregulatzaile lineala.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="fz0430">
+<a class="reference internal image-reference" href="_images/fz0430.png"><img alt="_images/fz0430.png" src="_images/fz0430.png" style="height: 150px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text"><strong>FZ0430</strong> tentsioa neurtzeko sentsorea.</span><a class="headerlink" href="#fz0430" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="kbp410">
+<a class="reference internal image-reference" href="_images/KBP410.jpeg"><img alt="_images/KBP410.jpeg" src="_images/KBP410.jpeg" style="height: 150px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text"><strong>KBP410</strong> zubi artezgailua.</span><a class="headerlink" href="#kbp410" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="l7805cv">
+<a class="reference internal image-reference" href="_images/L7805CV.jpg"><img alt="_images/L7805CV.jpg" src="_images/L7805CV.jpg" style="height: 150px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text"><strong>L7805CV</strong> tentsio erregulatzaile lineala.</span><a class="headerlink" href="#l7805cv" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Sorgailuak sortutako tentsioa eta irteeran daukaguna neurtzeko bi tentsio-sentsore konektatu dira, bakoitza UNO R3 plakaren pin analogiko batera lotuta egonik. Nahiz eta gure sorgailua DC-ko iturri bat izan eta berez ez izan beharrezkoa zubi artezgailua, errotoreak aldatzerakoan errotoreak biraketa norabidez eta, hortaz, polarizazioz aldatu al direnez, artezgailuak sorgailuaren polo positiboa eta negatiboa beti berdinak izatea ziurtatzen digu. Azkenik, USB irteeran 5V-ko irteera konstantea eduki nahi denez eta tentsio altuagoek arazoak sor ditzaketenez kargatu nahi diren gailuetan erreguladorea konektatu da. Honek 5V-ko irteera ematen du, baina sarreran 7V-ko sarrera minimoa behar du. Honek arazoak sor ditzake ez badugu tentsio hori sortzen.</p>
 <section id="arduino-ide-bidezko-programa">
 <h2>Arduino IDE Bidezko Programa<a class="headerlink" href="#arduino-ide-bidezko-programa" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Arduino UNO R3</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;SoftwareSerial.h&gt;</span>
+
+<span class="n">SoftwareSerial</span> <span class="n">espSerial</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">);</span> <span class="o">//</span><span class="n">RX</span> <span class="p">,</span> <span class="n">TX</span>
+<span class="n">String</span> <span class="nb">str</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">str1</span><span class="p">;</span>
+
+<span class="n">const</span> <span class="nb">int</span> <span class="n">sensorPin1</span> <span class="o">=</span> <span class="n">A0</span><span class="p">;</span>
+<span class="n">const</span> <span class="nb">int</span> <span class="n">sensorPin2</span> <span class="o">=</span> <span class="n">A1</span><span class="p">;</span>
+<span class="nb">int</span> <span class="n">sensorValue1</span><span class="p">;</span>
+<span class="nb">int</span> <span class="n">sensorValue2</span><span class="p">;</span>
+<span class="nb">float</span> <span class="n">value1</span><span class="p">;</span>
+<span class="nb">float</span> <span class="n">value2</span><span class="p">;</span>
+
+<span class="n">void</span> <span class="n">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">espSerial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">sensorValue1</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">sensorPin1</span><span class="p">);</span>
+  <span class="n">sensorValue2</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">sensorPin2</span><span class="p">);</span>
+  
+  <span class="n">value1</span> <span class="o">=</span> <span class="n">fmap</span><span class="p">(</span><span class="n">sensorValue1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1023</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">);</span>
+  <span class="n">value2</span> <span class="o">=</span> <span class="n">fmap</span><span class="p">(</span><span class="n">sensorValue2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1023</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">);</span>
+  
+  <span class="nb">str</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">value1</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="n">value2</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
+  <span class="n">espSerial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="nb">str</span><span class="p">);</span>
+  <span class="n">str1</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">value1</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="n">value2</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">str1</span><span class="p">);</span>
+
+  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">Eskalaz</span> <span class="n">aldatzeko</span> <span class="n">funtzioa</span><span class="o">.</span>
+<span class="nb">float</span> <span class="n">fmap</span><span class="p">(</span><span class="nb">float</span> <span class="n">x</span><span class="p">,</span> <span class="nb">float</span> <span class="n">in_min</span><span class="p">,</span> <span class="nb">float</span> <span class="n">in_max</span><span class="p">,</span> <span class="nb">float</span> <span class="n">out_min</span><span class="p">,</span> <span class="nb">float</span> <span class="n">out_max</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">in_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">out_max</span> <span class="o">-</span> <span class="n">out_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">in_max</span> <span class="o">-</span> <span class="n">in_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">out_min</span><span class="p">;</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+NodeMCU</label><div class="sd-tab-content docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &quot;ThingSpeak.h&quot;</span>
+<span class="c1">#include &lt;ESP8266WiFi.h&gt;</span>
+<span class="c1">#include &lt;SoftwareSerial.h&gt;</span>
+
+<span class="n">SoftwareSerial</span> <span class="n">ardSerial</span> <span class="p">(</span><span class="n">D1</span><span class="p">,</span><span class="n">D2</span><span class="p">);</span>
+<span class="n">char</span> <span class="n">ssid</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;XXXXXXXXXXXXXX&quot;</span><span class="p">;</span>
+<span class="n">char</span> <span class="k">pass</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;XXXXXXXXXXXXXXXX&quot;</span><span class="p">;</span>
+<span class="n">char</span> <span class="n">C</span><span class="p">;</span>
+
+<span class="nb">int</span> <span class="n">i</span><span class="p">;</span>
+<span class="nb">int</span> <span class="n">x</span><span class="p">;</span>
+<span class="nb">int</span> <span class="n">y</span><span class="p">;</span>
+
+<span class="nb">float</span> <span class="n">float1</span><span class="p">;</span>
+<span class="nb">float</span> <span class="n">float2</span><span class="p">;</span>
+
+<span class="n">String</span> <span class="n">input_string</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">input_string_copia</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">str1</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">str2</span><span class="p">;</span>
+
+<span class="nb">int</span> <span class="n">status</span> <span class="o">=</span> <span class="n">WL_IDLE_STATUS</span><span class="p">;</span>
+<span class="n">WiFiClient</span>  <span class="n">client</span><span class="p">;</span>
+<span class="n">unsigned</span> <span class="n">long</span> <span class="n">myChannelNumber</span> <span class="o">=</span> <span class="n">XXXXXX</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">char</span> <span class="o">*</span> <span class="n">myWriteAPIKey</span> <span class="o">=</span> <span class="s2">&quot;XXXXXXXXXXXXXXXX&quot;</span><span class="p">;</span>
+
+<span class="n">void</span> <span class="n">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">ardSerial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;Connecting to WiFi...&quot;</span><span class="p">);</span>
+  <span class="n">WiFi</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="k">pass</span><span class="p">);</span> 
+  <span class="k">while</span> <span class="p">(</span><span class="n">WiFi</span><span class="o">.</span><span class="n">status</span><span class="p">()</span> <span class="o">!=</span> <span class="n">WL_CONNECTED</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;Connecting...&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;Connected to WiFi&quot;</span><span class="p">);</span>
+  <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="n">client</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">ardSerial</span><span class="o">.</span><span class="n">available</span><span class="p">()</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">){</span>
+    <span class="n">C</span> <span class="o">=</span> <span class="n">ardSerial</span><span class="o">.</span><span class="n">read</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">C</span><span class="o">==</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">){</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+      <span class="n">input_string</span> <span class="o">+=</span><span class="n">C</span><span class="p">;</span>
+      <span class="n">input_string_copia</span> <span class="o">+=</span><span class="n">C</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">input_string</span><span class="o">.</span><span class="n">length</span><span class="p">()</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">){</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">input_string_copia</span><span class="o">.</span><span class="n">indexOf</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==-</span><span class="mi">1</span><span class="p">){</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+      <span class="n">input_string_copia</span> <span class="o">=</span> <span class="n">input_string_copia</span><span class="o">.</span><span class="n">substring</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+      <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">y</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">input_string</span><span class="o">.</span><span class="n">indexOf</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">);</span>
+    <span class="n">str1</span><span class="o">=</span><span class="n">input_string</span><span class="o">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">str2</span><span class="o">=</span><span class="n">input_string</span><span class="o">.</span><span class="n">substring</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">float1</span><span class="o">=</span><span class="n">str1</span><span class="o">.</span><span class="n">toFloat</span><span class="p">();</span>
+    <span class="n">float2</span><span class="o">=</span><span class="n">str2</span><span class="o">.</span><span class="n">toFloat</span><span class="p">();</span>
+    <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">setField</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">float1</span><span class="p">);</span>
+    <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">setField</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">float2</span><span class="p">);</span>
+    <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">writeFields</span><span class="p">(</span><span class="n">myChannelNumber</span><span class="p">,</span> <span class="n">myWriteAPIKey</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">input_string</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">15000</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">C</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="n">input_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+  <span class="n">input_string_copia</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>Aurretik aipatu bezala, bi plaken artean serie konexio bat ezartzen da Arduinoko <span class="math notranslate nohighlight">\(5\)</span> eta <span class="math notranslate nohighlight">\(6\)</span> pinak eta NodeMCU-ko <span class="math notranslate nohighlight">\(D1\)</span> eta <span class="math notranslate nohighlight">\(D2\)</span> pinekin konektatuz. Gainera, <em>SoftwareSerial</em> librería erabiltzen da helburu honekin. Honetaz gaina, Arduinoak <span class="math notranslate nohighlight">\(A0\)</span> eta <span class="math notranslate nohighlight">\(A1\)</span> pin analogikoen bidez tentsioak jasotzen ditu, hauen balioak NodeMCU-ra bidaltzen ditu ondoren WiFi bidez transmitituak izan daitezen eta bere serie motitorean ere inprimatzen ditu.</p>
+<p>Aldiz, NodeMCU-aren programa zertxobait konplexuagoa da. <em>SoftwareSerial</em> libreriaz gain, <em>ESP8266WiFi</em> libreria ere erabiltzen da WiFi bidezko konexioa ahalbidetzeko eta <em>ThingSpeak</em> ere erabiltzen da, web-orri honetara informazioa automatikoki eta modu erraz batean bidaltzea ahalbidetuz. Bestalde, programaren xedea Arduinotik jasotako informazioa ThingSpeak orrira bidaltzea da. Gainera, kode zati bat gehitu da serie konexiotik formatu desegokiarekin iristen diren datuak baztertzeko.</p>
 </section>
 </section>
 
