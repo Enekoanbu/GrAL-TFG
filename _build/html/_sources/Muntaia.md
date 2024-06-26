@@ -136,10 +136,12 @@ int sensorValue1;
 int sensorValue2;
 float value1;
 float value2;
+float denbora;
 
 void setup() {
   Serial.begin(9600);
   espSerial.begin(9600);
+  denbora=0;
 }
 
 void loop() {
@@ -148,10 +150,15 @@ void loop() {
   
   value1 = fmap(sensorValue1, 0, 1023, 0.0, 25.0);
   value2 = fmap(sensorValue2, 0, 1023, 0.0, 25.0);
+
+  denbora=denbora+0.5;
+  if (denbora>3600){
+    denbora=0;
+  }
   
   str = String(value1)+String(",")+String(value2)+String("\n");
   espSerial.println(str);
-  str1 = String(value1)+String(",")+String(value2);
+  str1 = String(value1)+String(",")+String(value2)+String(",")+String(denbora);
   Serial.println(str1);
 
   delay(500);
@@ -161,6 +168,7 @@ void loop() {
 float fmap(float x, float in_min, float in_max, float out_min, float out_max) {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+
 
 ```
 ````
@@ -172,13 +180,14 @@ float fmap(float x, float in_min, float in_max, float out_min, float out_max) {
 #include <SoftwareSerial.h>
 
 SoftwareSerial ardSerial (D1,D2);
-char ssid[] = "XXXXXXXXXXXXXX";
-char pass[] = "XXXXXXXXXXXXXXXX";
+char ssid[] = "EUSKALTEL_9E7B";
+char pass[] = "EB97041EA4EBC5EA";
 char C;
 
 int i;
 int x;
 int y;
+int z;
 
 float float1;
 float float2;
@@ -190,20 +199,14 @@ String str2;
 
 int status = WL_IDLE_STATUS;
 WiFiClient  client;
-unsigned long myChannelNumber = XXXXXX;
-const char * myWriteAPIKey = "XXXXXXXXXXXXXXXX";
+unsigned long myChannelNumber = 2582949;
+const char * myWriteAPIKey = "FBFETIIJLBTIHTOU";
 
 void setup() {
-  Serial.begin(9600);
   ardSerial.begin(9600);
-  Serial.println("Connecting to WiFi...");
   WiFi.begin(ssid, pass); 
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(1000);
-    Serial.println("Connecting...");
-  }
-  Serial.println("Connected to WiFi");
   ThingSpeak.begin(client);
+  z=0;
 }
 
 void loop() {
@@ -232,14 +235,23 @@ void loop() {
     i = input_string.indexOf(",");
     str1=input_string.substring(1,i-1);
     str2=input_string.substring(i+1);
-    float1=str1.toFloat();
-    float2=str2.toFloat();
-    ThingSpeak.setField(1,float1);
-    ThingSpeak.setField(2,float2);
-    ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
-    Serial.println(input_string);
-    delay(15000);
+    float1=float1+str1.toFloat();
+    float2=float2+str2.toFloat();
+    if (z==12){
+      float1=float1/30;
+      float2=float2/30;
+      ThingSpeak.setField(1,float1);
+      ThingSpeak.setField(2,float2);
+      ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
+      float1=0;
+      float2=0;
+      z=0;
+    }
+    else{
+      z=z+1;
+    }
   }
+  delay(500);
   C=0;
   input_string = "";
   input_string_copia = "";
@@ -248,6 +260,8 @@ void loop() {
 ```
 ````
 `````
-Aurretik aipatu bezala, bi plaken artean serie konexio bat ezartzen da Arduinoko $5$ eta $6$ pinak eta NodeMCU-ko $D1$ eta $D2$ pinekin konektatuz. Gainera, *SoftwareSerial* librería erabiltzen da helburu honekin. Honetaz gaina, Arduinoak $A0$ eta $A1$ pin analogikoen bidez tentsioak jasotzen ditu, hauen balioak NodeMCU-ra bidaltzen ditu ondoren WiFi bidez transmitituak izan daitezen eta bere serie motitorean ere inprimatzen ditu.
+Aurretik aipatu bezala, bi plaken artean serie konexio bat ezartzen da Arduinoko $5$ eta $6$ pinak eta NodeMCU-ko $D1$ eta $D2$ pinekin konektatuz. Gainera, *SoftwareSerial* libreria erabiltzen da helburu hau betetzeko. Honetaz gain, Arduinoak $A0$ eta $A1$ pin analogikoen bidez tentsioak neurtzen ditu eta denbora kontagailu bat ere inplementatu da. Bi tentsio horiek dira NodeMCU-ra transmititzen direnak eta bai tentsioak eta denbora kontagailuaren balioa plakaren serie monitorean inprimatzen da.
 
-Aldiz, NodeMCU-aren programa zertxobait konplexuagoa da. *SoftwareSerial* libreriaz gain, *ESP8266WiFi* libreria ere erabiltzen da WiFi bidezko konexioa ahalbidetzeko eta *ThingSpeak* ere erabiltzen da, web-orri honetara informazioa automatikoki eta modu erraz batean bidaltzea ahalbidetuz. Bestalde, programaren xedea Arduinotik jasotako informazioa ThingSpeak orrira bidaltzea da. Gainera, kode zati bat gehitu da serie konexiotik formatu desegokiarekin iristen diren datuak baztertzeko.
+Aldiz, NodeMCU-aren programa zertxobait konplexuagoa da. *SoftwareSerial* libreriaz gain, *ESP8266WiFi* libreria ere erabiltzen da WiFi bidezko konexioa ahalbidetzeko eta *ThingSpeak* ere erabiltzen da, web-orri honetara informazioa automatikoki eta modu erraz batean bidaltzea ahalbidetuz. Funtsean programak Arduinotik jasotako datuak aipatutako orrira bidaltzeko balio du.
+
+Gainera, kode zati bat gehitu da serie konexiotik formatu desegokiarekin iristen diren datuak baztertzeko.  Honetaz gain, Arduinoak datuak segundu erdiro bidaltzen dituenez eta ThingSpeak orriak 15 segunduro jasotzen dituenez informazioa, programak tarte horretan jasotzen dituen datu guztien batazbestekoa kalkulatuko du eta hori izango da orrira transmitituko den datua.

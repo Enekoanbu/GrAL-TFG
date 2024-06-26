@@ -22,47 +22,19 @@ Izatez, {numref}`HegoDis0` irudian ikusi daitekeen bezala, errotorea tarte txiki
 (EDiseinua2)=
 ## 2. Errotorea
 
-```{figure} ./Irudiak/HegoDis1.png
----
-scale: 63%
-align: center
-name: HegoDis1
----
-Proposatutako bigarren errotorearen diseinua.
-```
-
-Diseinu honetan aurrekoari diametro handiagoko zati bat gehitu zaio erdi-zirkuluen alde horretan jotzen duen eta errotorea frenatzen duen haize kantitatea hobeto bideratzeko eta haize gehiago sartzeko errotorearen palen zati ahurrean.
-
-(EDiseinua3)=
-## 3. Errotorea
-
 ```{figure} ./Irudiak/HegoDis2.png
 ---
 scale: 63%
 align: center
 name: HegoDis2
 ---
-Proposatutako hirugarren errotorearen diseinua.
+Proposatutako bigarren errotorearen diseinua.
 ```
 
-Kasu honetan, egitura erdi-zirkularra aldatu da haizea ardatzetik distantzia handiago batera biltzeko eta horrela lortutako momentua handitzeko. 
+Kasu honetan, egitura erdi-zirkularra aldatu da haizea ardatzetik distantzia handiago batera biltzeko eta horrela lortutako momentua handitzeko.
 
-(EDiseinua4)=
-## 4. Errotorea
-
-```{figure} ./Irudiak/HegoDis3.png
----
-scale: 63%
-align: center
-name: HegoDis3
----
-Proposatutako laugarren errotorearen diseinua.
-```
-
-Kasu honetan, egitura erdi-zirkularra mantendu da, baina palen atzealdean sortzen diren turbulentziak minimizatze aldera egitura triangular kurbatu bat jarri da haizea hobeto bideratzeko helburuarekin.
-
-(EDiseinua5)=
-## 5. Errotorea
+(EDiseinua3)=
+## 3. Errotorea
 
 ```{figure} ./Irudiak/HegoDis4.png
 ---
@@ -70,7 +42,35 @@ scale: 63%
 align: center
 name: HegoDis4
 ---
+Proposatutako hirugarren errotorearen diseinua.
+```
+
+Kasu honetan, aurreko barne egitura mantendu da kurbatura antzeko modu batean deformatuz, baina kanpo egitura aldatu da forma angeluzuzena izan dezan kanpotik. Horrela hegoen atzean sortzen diren turbulentziak txikiagotzea espero da.
+
+(EDiseinua4)=
+## 4. Errotorea
+
+```{figure} ./Irudiak/HegoDis1.png
+---
+scale: 63%
+align: center
+name: HegoDis1
+---
+Proposatutako laugarren errotorearen diseinua.
+```
+
+Diseinu honetan aurrekoari diametro handiagoko zati bat gehitu zaio erdi-zirkuluen alde horretan jotzen duen eta errotorea frenatzen duen haize kantitatea hobeto bideratzeko eta haize gehiago sartzeko errotorearen palen zati ahurrean.
+
+(EDiseinua5)=
+## 5. Errotorea
+
+```{figure} ./Irudiak/HegoDis3.png
+---
+scale: 63%
+align: center
+name: HegoDis3
+---
 Proposatutako bosgarren errotorearen diseinua.
 ```
 
-Kasu honetan, aurreko bi kasuetako ideiak elkartu dira. Barnean momentua handitzeko forma erdizirkularra kurbatu da eta kanpoaldean forma triangular angeluzuzen bat erabili da palen atzealdeko turbulentziak minimizatzeko.
+Kasu honetan, egitura erdi-zirkularra mantendu da, baina palen atzealdean sortzen diren turbulentziak minimizatze aldera egitura triangular kurbatu bat jarri da haizea hobeto bideratzeko helburuarekin.

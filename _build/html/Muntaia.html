@@ -32,10 +32,10 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=ca93fcec" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-examples.css?v=e236af4b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=3437f865" />
@@ -533,10 +533,12 @@ Arduino UNO R3</label><div class="sd-tab-content docutils">
 <span class="nb">int</span> <span class="n">sensorValue2</span><span class="p">;</span>
 <span class="nb">float</span> <span class="n">value1</span><span class="p">;</span>
 <span class="nb">float</span> <span class="n">value2</span><span class="p">;</span>
+<span class="nb">float</span> <span class="n">denbora</span><span class="p">;</span>
 
 <span class="n">void</span> <span class="n">setup</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">Serial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
   <span class="n">espSerial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">denbora</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
@@ -545,10 +547,15 @@ Arduino UNO R3</label><div class="sd-tab-content docutils">
   
   <span class="n">value1</span> <span class="o">=</span> <span class="n">fmap</span><span class="p">(</span><span class="n">sensorValue1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1023</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">);</span>
   <span class="n">value2</span> <span class="o">=</span> <span class="n">fmap</span><span class="p">(</span><span class="n">sensorValue2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1023</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">);</span>
+
+  <span class="n">denbora</span><span class="o">=</span><span class="n">denbora</span><span class="o">+</span><span class="mf">0.5</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">denbora</span><span class="o">&gt;</span><span class="mi">3600</span><span class="p">){</span>
+    <span class="n">denbora</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
   
   <span class="nb">str</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">value1</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="n">value2</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
   <span class="n">espSerial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="nb">str</span><span class="p">);</span>
-  <span class="n">str1</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">value1</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="n">value2</span><span class="p">);</span>
+  <span class="n">str1</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">value1</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="n">value2</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="n">denbora</span><span class="p">);</span>
   <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">str1</span><span class="p">);</span>
 
   <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
@@ -558,6 +565,7 @@ Arduino UNO R3</label><div class="sd-tab-content docutils">
 <span class="nb">float</span> <span class="n">fmap</span><span class="p">(</span><span class="nb">float</span> <span class="n">x</span><span class="p">,</span> <span class="nb">float</span> <span class="n">in_min</span><span class="p">,</span> <span class="nb">float</span> <span class="n">in_max</span><span class="p">,</span> <span class="nb">float</span> <span class="n">out_min</span><span class="p">,</span> <span class="nb">float</span> <span class="n">out_max</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">in_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">out_max</span> <span class="o">-</span> <span class="n">out_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">in_max</span> <span class="o">-</span> <span class="n">in_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">out_min</span><span class="p">;</span>
 <span class="p">}</span>
+
 
 </pre></div>
 </div>
@@ -570,13 +578,14 @@ NodeMCU</label><div class="sd-tab-content docutils">
 <span class="c1">#include &lt;SoftwareSerial.h&gt;</span>
 
 <span class="n">SoftwareSerial</span> <span class="n">ardSerial</span> <span class="p">(</span><span class="n">D1</span><span class="p">,</span><span class="n">D2</span><span class="p">);</span>
-<span class="n">char</span> <span class="n">ssid</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;XXXXXXXXXXXXXX&quot;</span><span class="p">;</span>
-<span class="n">char</span> <span class="k">pass</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;XXXXXXXXXXXXXXXX&quot;</span><span class="p">;</span>
+<span class="n">char</span> <span class="n">ssid</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;EUSKALTEL_9E7B&quot;</span><span class="p">;</span>
+<span class="n">char</span> <span class="k">pass</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">&quot;EB97041EA4EBC5EA&quot;</span><span class="p">;</span>
 <span class="n">char</span> <span class="n">C</span><span class="p">;</span>
 
 <span class="nb">int</span> <span class="n">i</span><span class="p">;</span>
 <span class="nb">int</span> <span class="n">x</span><span class="p">;</span>
 <span class="nb">int</span> <span class="n">y</span><span class="p">;</span>
+<span class="nb">int</span> <span class="n">z</span><span class="p">;</span>
 
 <span class="nb">float</span> <span class="n">float1</span><span class="p">;</span>
 <span class="nb">float</span> <span class="n">float2</span><span class="p">;</span>
@@ -588,20 +597,14 @@ NodeMCU</label><div class="sd-tab-content docutils">
 
 <span class="nb">int</span> <span class="n">status</span> <span class="o">=</span> <span class="n">WL_IDLE_STATUS</span><span class="p">;</span>
 <span class="n">WiFiClient</span>  <span class="n">client</span><span class="p">;</span>
-<span class="n">unsigned</span> <span class="n">long</span> <span class="n">myChannelNumber</span> <span class="o">=</span> <span class="n">XXXXXX</span><span class="p">;</span>
-<span class="n">const</span> <span class="n">char</span> <span class="o">*</span> <span class="n">myWriteAPIKey</span> <span class="o">=</span> <span class="s2">&quot;XXXXXXXXXXXXXXXX&quot;</span><span class="p">;</span>
+<span class="n">unsigned</span> <span class="n">long</span> <span class="n">myChannelNumber</span> <span class="o">=</span> <span class="mi">2582949</span><span class="p">;</span>
+<span class="n">const</span> <span class="n">char</span> <span class="o">*</span> <span class="n">myWriteAPIKey</span> <span class="o">=</span> <span class="s2">&quot;FBFETIIJLBTIHTOU&quot;</span><span class="p">;</span>
 
 <span class="n">void</span> <span class="n">setup</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">Serial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
   <span class="n">ardSerial</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;Connecting to WiFi...&quot;</span><span class="p">);</span>
   <span class="n">WiFi</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="k">pass</span><span class="p">);</span> 
-  <span class="k">while</span> <span class="p">(</span><span class="n">WiFi</span><span class="o">.</span><span class="n">status</span><span class="p">()</span> <span class="o">!=</span> <span class="n">WL_CONNECTED</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
-    <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;Connecting...&quot;</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="s2">&quot;Connected to WiFi&quot;</span><span class="p">);</span>
   <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="n">client</span><span class="p">);</span>
+  <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="n">void</span> <span class="n">loop</span><span class="p">()</span> <span class="p">{</span>
@@ -630,14 +633,23 @@ NodeMCU</label><div class="sd-tab-content docutils">
     <span class="n">i</span> <span class="o">=</span> <span class="n">input_string</span><span class="o">.</span><span class="n">indexOf</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">);</span>
     <span class="n">str1</span><span class="o">=</span><span class="n">input_string</span><span class="o">.</span><span class="n">substring</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
     <span class="n">str2</span><span class="o">=</span><span class="n">input_string</span><span class="o">.</span><span class="n">substring</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-    <span class="n">float1</span><span class="o">=</span><span class="n">str1</span><span class="o">.</span><span class="n">toFloat</span><span class="p">();</span>
-    <span class="n">float2</span><span class="o">=</span><span class="n">str2</span><span class="o">.</span><span class="n">toFloat</span><span class="p">();</span>
-    <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">setField</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">float1</span><span class="p">);</span>
-    <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">setField</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">float2</span><span class="p">);</span>
-    <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">writeFields</span><span class="p">(</span><span class="n">myChannelNumber</span><span class="p">,</span> <span class="n">myWriteAPIKey</span><span class="p">);</span>
-    <span class="n">Serial</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">input_string</span><span class="p">);</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">15000</span><span class="p">);</span>
+    <span class="n">float1</span><span class="o">=</span><span class="n">float1</span><span class="o">+</span><span class="n">str1</span><span class="o">.</span><span class="n">toFloat</span><span class="p">();</span>
+    <span class="n">float2</span><span class="o">=</span><span class="n">float2</span><span class="o">+</span><span class="n">str2</span><span class="o">.</span><span class="n">toFloat</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">z</span><span class="o">==</span><span class="mi">12</span><span class="p">){</span>
+      <span class="n">float1</span><span class="o">=</span><span class="n">float1</span><span class="o">/</span><span class="mi">30</span><span class="p">;</span>
+      <span class="n">float2</span><span class="o">=</span><span class="n">float2</span><span class="o">/</span><span class="mi">30</span><span class="p">;</span>
+      <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">setField</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">float1</span><span class="p">);</span>
+      <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">setField</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">float2</span><span class="p">);</span>
+      <span class="n">ThingSpeak</span><span class="o">.</span><span class="n">writeFields</span><span class="p">(</span><span class="n">myChannelNumber</span><span class="p">,</span> <span class="n">myWriteAPIKey</span><span class="p">);</span>
+      <span class="n">float1</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+      <span class="n">float2</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+      <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+      <span class="n">z</span><span class="o">=</span><span class="n">z</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
   <span class="p">}</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
   <span class="n">C</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
   <span class="n">input_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
   <span class="n">input_string_copia</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
@@ -647,8 +659,9 @@ NodeMCU</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<p>Aurretik aipatu bezala, bi plaken artean serie konexio bat ezartzen da Arduinoko <span class="math notranslate nohighlight">\(5\)</span> eta <span class="math notranslate nohighlight">\(6\)</span> pinak eta NodeMCU-ko <span class="math notranslate nohighlight">\(D1\)</span> eta <span class="math notranslate nohighlight">\(D2\)</span> pinekin konektatuz. Gainera, <em>SoftwareSerial</em> librería erabiltzen da helburu honekin. Honetaz gaina, Arduinoak <span class="math notranslate nohighlight">\(A0\)</span> eta <span class="math notranslate nohighlight">\(A1\)</span> pin analogikoen bidez tentsioak jasotzen ditu, hauen balioak NodeMCU-ra bidaltzen ditu ondoren WiFi bidez transmitituak izan daitezen eta bere serie motitorean ere inprimatzen ditu.</p>
-<p>Aldiz, NodeMCU-aren programa zertxobait konplexuagoa da. <em>SoftwareSerial</em> libreriaz gain, <em>ESP8266WiFi</em> libreria ere erabiltzen da WiFi bidezko konexioa ahalbidetzeko eta <em>ThingSpeak</em> ere erabiltzen da, web-orri honetara informazioa automatikoki eta modu erraz batean bidaltzea ahalbidetuz. Bestalde, programaren xedea Arduinotik jasotako informazioa ThingSpeak orrira bidaltzea da. Gainera, kode zati bat gehitu da serie konexiotik formatu desegokiarekin iristen diren datuak baztertzeko.</p>
+<p>Aurretik aipatu bezala, bi plaken artean serie konexio bat ezartzen da Arduinoko <span class="math notranslate nohighlight">\(5\)</span> eta <span class="math notranslate nohighlight">\(6\)</span> pinak eta NodeMCU-ko <span class="math notranslate nohighlight">\(D1\)</span> eta <span class="math notranslate nohighlight">\(D2\)</span> pinekin konektatuz. Gainera, <em>SoftwareSerial</em> libreria erabiltzen da helburu hau betetzeko. Honetaz gain, Arduinoak <span class="math notranslate nohighlight">\(A0\)</span> eta <span class="math notranslate nohighlight">\(A1\)</span> pin analogikoen bidez tentsioak neurtzen ditu eta denbora kontagailu bat ere inplementatu da. Bi tentsio horiek dira NodeMCU-ra transmititzen direnak eta bai tentsioak eta denbora kontagailuaren balioa plakaren serie monitorean inprimatzen da.</p>
+<p>Aldiz, NodeMCU-aren programa zertxobait konplexuagoa da. <em>SoftwareSerial</em> libreriaz gain, <em>ESP8266WiFi</em> libreria ere erabiltzen da WiFi bidezko konexioa ahalbidetzeko eta <em>ThingSpeak</em> ere erabiltzen da, web-orri honetara informazioa automatikoki eta modu erraz batean bidaltzea ahalbidetuz. Funtsean programak Arduinotik jasotako datuak aipatutako orrira bidaltzeko balio du.</p>
+<p>Gainera, kode zati bat gehitu da serie konexiotik formatu desegokiarekin iristen diren datuak baztertzeko.  Honetaz gain, Arduinoak datuak segundu erdiro bidaltzen dituenez eta ThingSpeak orriak 15 segunduro jasotzen dituenez informazioa, programak tarte horretan jasotzen dituen datu guztien batazbestekoa kalkulatuko du eta hori izango da orrira transmitituko den datua.</p>
 </section>
 </section>
 
