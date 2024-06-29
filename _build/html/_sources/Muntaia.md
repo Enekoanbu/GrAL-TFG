@@ -44,13 +44,31 @@ Azkenik, {numref}`GoraEuskarri` irudian errotorean goiko aldetik ardatz bat ater
 
 Bestalde, errotorea eraikitzeko {numref}`GoraEuskarri` eta {numref}`BeraEuskarri` irudietako piezei 300mm-ko diametroko bi plataforma atxikiko zaizkie. Plataforma hauek egurrezko konglomeratuzko 6mm-ko lodiera duen xafla mehe batez eginak daude. Bi hauen artean eraikiko dira {ref}`EDiseinua` atalean aurkeztutako errotoreak. Aipatu beharra dago hauen hegoak edo palak 3D inprimagailu bidez sortu direla, baina, hego bakoitzaren altuera totala metro erdikoa izatea nahi zenez eta honek inprimagailuaren mugak gainditzen zituenez, pala bakoitza 125mm-ko altuerako lau piezetan inprimatu dela eta, ondoren, elkarri pegatu direla.
 
-```{figure} ./Irudiak/PrototipoFinala.jpg
+Amaitzeko, eraikiko den azkeneko pieza estatore palez osatutako kutxa da, {numref}`PrototipoFinala+Kutxa` irudian ikusi daitekeen egitura, hain zuzen ere. Kutxa hau errotorearen inguruan jarriko da eta bere egitekoak haizea errotore barnera norabide egokiagoarekin bideratzea eta sorgailuari egonkortasun handiagoa ematea dira. Egitura honek izan dezakeen eragina behatzeko hau muntatuta eta muntatu gabe egingo dira frogak. Beraz, aldaketa ahalbidetzeko finkatzeko bakarrik torloju batzuk erabiliko dira beheko oinarrian eta brida batzuk gorakoan.
+
+::::{grid}
+:gutter: 0
+
+:::{grid-item}
+```{figure} ./Irudiak/NormalOndo.jpg
 ---
 height: 400px
 name: PrototipoFinala
 ---
 Eraikuntza prozesuaren amaieran lortutako prototipoa, {ref}`EDiseinua1` erdibituta muntatuta dagoelarik.
 ```
+:::
+:::{grid-item}
+```{figure} ./Irudiak/KutxaOndo.jpg
+---
+height: 400px
+name: PrototipoFinala+Kutxa
+---
+Eraikitako prototipoa, pala finkodun kutxa eta {ref}`EDiseinua1` erdibituta muntatuta dagoelarik.
+```
+:::
+::::
+
 
 
 # Zati Elektronikoa
