@@ -54,7 +54,7 @@ Abiaduraren neurketa fidagarri bat lortu al izateko, haize-makina 4 edo 5 aldiz 
 
 ## Erretore Desberdinekin Erreboluzio eta Tentsio Neurketak
 
-Jarduera esperimentalaren zati garrantzitsuena errotore mota desberdinekin haize-makinak sortzen duen abiadura bakoitzeko eraikitako prototipoak hartzen duen abiadura neurtzea eta honen ondorioz sortu dezakeen tentsioa behatzea izango da.
+Jarduera esperimentalaren zati garrantzitsuena errotore mota desberdinekin haize-makinak sortzen duen abiadura bakoitzeko eraikitako prototipoak hartzen duen abiadura neurtzea eta honen ondorioz sortu dezakeen tentsioa behatzea izango da. Horretarako, aztertuko diren errotore aldaera bakoitza, haizearen intentsitate bakoitzaren pean jarriko da 30 segundu inguruko tarteetan.
 
 ```{figure} ./Irudiak/Proba2.png
 ---
@@ -65,9 +65,7 @@ name: Proba2
 Erreboluzioen eta tentsioen neurketa egiteko muntaia.
 ```
 
-{numref}`Proba2` irudian erakusten den muntaia egin da helburu hau betetzeko. Haize-korrontea ez eragozteko, neurketa tresna guztiak errotorearen alde batean kokatu dira. Takometroa errotoretik $20cm$ ingurura kokatu da eta neurketak ondo egiteko errotorean jarri den marka islatzailera zuzendu da. Bere balioak gordetzeko bere atzean jarri den bideo-kamera bat erabili da. Aldiz, tentsio datuak jasotzeko ordenagailua arduinora konektatu da eta aipaturiko **Putty** programa erabili da serie monitoreko datuak gordetzeko. Haize-makina aurreko atalean azaldu den posizioetan kokatuko da. 
-
-Gainera, gehigarri moduan, errotorearen funtzionamendua hobeto aztertzeko eta edozein arazoren zergatia jakiteko aukera izateko, errotorearen goiko oinarrian kokatutako **GoPro** kamera bat erabili da egin diren esperimentuetan errotoreak izan duen jarrera grabatzeko.
+{numref}`Proba2` irudian erakusten den muntaia egin da helburu hau betetzeko. Haize-korrontea ez eragozteko, neurketa tresna guztiak errotorearen alde batean kokatu dira. Takometroa errotoretik $20cm$ ingurura kokatu da eta neurketak ondo egiteko errotorean jarri den marka islatzailera zuzendu da. Bere balioak gordetzeko bere atzean jarri den bideo-kamera bat erabili da. Aldiz, tentsio datuak jasotzeko ordenagailua arduinora konektatu da eta aipaturiko **Putty** programa erabili da serie monitoreko datuak gordetzeko. Haize-makina aurreko atalean azaldu den posizioetan kokatuko da. Gainera, gehigarri moduan, errotorearen funtzionamendua hobeto aztertzeko eta edozein arazoren zergatia jakiteko aukera izateko, errotorearen goiko oinarrian kokatutako **GoPro** kamera bat erabili da egin diren esperimentuetan errotoreak izan duen jarrera grabatzeko.
 
 Errotore desberdinei dagokienez, {ref}`EDiseinua` atalean aurkeztutako {ref}`EDiseinua1`, {ref}`EDiseinua2` eta {ref}`EDiseinua3` probatuko dira. Gainera, errotore bakoitzeko bi muntai egingo dira, bata errotorea osorik muntatuta eta bestea errotorea erdibiturik, zati bakoitza norabide elkarzut batean orientatuz. Honetaz gain, estatore finkoen kutxa muntatzeak izan dezakeen eragina ere aztertuko da eta, beraz, errotore mota bakoitzeko lau aukera desberdinekin egingo dira frogak.
 
