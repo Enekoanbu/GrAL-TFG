@@ -32,10 +32,10 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=ca93fcec" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-examples.css?v=e236af4b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="_static/myfile.css?v=3437f865" />
@@ -64,6 +64,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex": {"macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Emaitzak-Eztabaida';</script>
     <link rel="canonical" href="https://publiconsulting.com/Emaitzak-Eztabaida.html" />
     <link rel="index" title="Indizea" href="genindex.html" />
@@ -399,14 +401,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emaitza-esperimentalak">Emaitza Esperimentalak</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eztabaida">Eztabaida</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subseccion-1-1">Subsección 1.1</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#nota">Nota</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emaitza-esperimentalak">Emaitza Esperimentalak</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haizearen-abiadura">Haizearen Abiadura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#erreboluzio-eta-tentsio-neurketak">Erreboluzio eta Tentsio Neurketak</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#errotorea">1. Errotorea</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2. Errotorea</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3. Errotorea</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eztabaida">Eztabaida</a></li>
 </ul>
             </nav>
         </div>
@@ -422,18 +427,116 @@ document.write(`
 <h1>Emaitzak eta Eztabaida<a class="headerlink" href="#emaitzak-eta-eztabaida" title="Link to this heading">#</a></h1>
 <section id="emaitza-esperimentalak">
 <h2>Emaitza Esperimentalak<a class="headerlink" href="#emaitza-esperimentalak" title="Link to this heading">#</a></h2>
+<section id="haizearen-abiadura">
+<h3>Haizearen Abiadura<a class="headerlink" href="#haizearen-abiadura" title="Link to this heading">#</a></h3>
+<p>Ondokoak dira aurreko atalean aurkeztutako metodoa erabiliz probak egiteko erabiliko den haizearen abiadura. Nahiz eta abiadura errealtzat batezbestekoa hartuko den, maximoa ere erakusten da abiadurek norarte fluktuatu dezaketen ikusi al izateko.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="haizeabiadurak">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">: Haize-makina distantzia desberdinetara jartzean errotorearen kokalekuan neurtutako batezbesteko haizearen abiadura eta balio maximoa.</span><a class="headerlink" href="#haizeabiadurak" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Errotorearekiko distantzia</p></th>
+<th class="head"><p>Batezbesteko balioa</p></th>
+<th class="head"><p>Balio Maximoa</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1m\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(10.76m/s\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(11.7m/s\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(1.5m\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(7.03m/s\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(9.8m/s\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(2m\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(6.39m/s\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(8.1m/s\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2.5m\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(5.14m/s\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(6.1m/s\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(3m\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(4.07m/s\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(5.6m/s\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="erreboluzio-eta-tentsio-neurketak">
+<h3>Erreboluzio eta Tentsio Neurketak<a class="headerlink" href="#erreboluzio-eta-tentsio-neurketak" title="Link to this heading">#</a></h3>
+<section id="errotorea">
+<h4>1. Errotorea<a class="headerlink" href="#errotorea" title="Link to this heading">#</a></h4>
+<p>Hasteko, errotorea erdibiturik muntatu da eta pala finkoak jarri gabeko probak burutu dira. Lehenik, aipatu beharra da haize-makina 1m-ra kokatzean, hots, haizearen abiadura handiena den frogan, errotorea haustura puntura iritsi dela. Egiturak <span class="math notranslate nohighlight">\(800RPM\)</span> arteko abiadurak arazorik jasaten duela frogatu da, baina, hortik gora, kolapsatu egiten du eta, gainera, abiadura horietan sortzen diren tentsioak arriskutsuak dira zirkuitu elektronikoan erabilitako osagaientzat, batez ere, bai sentsoreak ete erreguladoreak funditu ditzake. Arrazoi hauengatik, ez dira kontuan hartu haize-makina 1m-ra kokatutako kasuko emaitzak. Beste kasuetan lortutako tentsioen emaitzak ondorengoak dira:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="konparazioa-sorgailuazuzenean">
+<a class="reference internal image-reference" href="_images/Konparazioa_SorgailuaZuzenean.png"><img alt="_images/Konparazioa_SorgailuaZuzenean.png" src="_images/Konparazioa_SorgailuaZuzenean.png" style="height: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text"><a class="reference internal" href="ErrotoreenDiseinua.html#ediseinua1"><span class="std std-ref">1. Errotorea</span></a> erdibiturik erabiltzean sorgailuak sortzen duen tentsioa, haize-makina distantzia desberdinetara jartzean.</span><a class="headerlink" href="#konparazioa-sorgailuazuzenean" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="konparazioa-irteeran">
+<a class="reference internal image-reference" href="_images/Konparazioa_Irteeran.png"><img alt="_images/Konparazioa_Irteeran.png" src="_images/Konparazioa_Irteeran.png" style="height: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text"><a class="reference internal" href="ErrotoreenDiseinua.html#ediseinua1"><span class="std std-ref">1. Errotorea</span></a> erdibiturik erabiltzean USB portuaren bidez ematen den tentsioa, haize-makina distantzia desberdinetara jartzean.</span><a class="headerlink" href="#konparazioa-irteeran" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Bestalde, takometroaren bidez, tentsio neurtzen den aldi berean, erretorea biratzen ari den erreboluzio kopurua ere neurtu da:</p>
+<figure class="align-default" id="erreboluzioak1">
+<a class="reference internal image-reference" href="_images/Erreboluzioak1.png"><img alt="_images/Erreboluzioak1.png" src="_images/Erreboluzioak1.png" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text"><a class="reference internal" href="ErrotoreenDiseinua.html#ediseinua1"><span class="std std-ref">1. Errotorea</span></a> erdibiturik erabiltzean errotorea biratzen ari den erreboluzio kopuruak, haize-makina distantzia desberdinetara jartzean.</span><a class="headerlink" href="#erreboluzioak1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Behaketa hauek amaiturik, estatore kutxa muntatu zaio prototipoari eta saiakera berdinak burutu dira ondorengo emaitzak lortuz:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="konparazioa-sorgailua-1">
+<a class="reference internal image-reference" href="_images/Konparazioa_Sorgailua_1.png"><img alt="_images/Konparazioa_Sorgailua_1.png" src="_images/Konparazioa_Sorgailua_1.png" style="height: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text"><a class="reference internal" href="ErrotoreenDiseinua.html#ediseinua1"><span class="std std-ref">1. Errotorea</span></a> erdibiturik erabiltzean, pala finkoen kutxa muntatuta duelarik, sorgailuak sortzen duen tentsioa, haize-makina distantzia desberdinetara jartzean.</span><a class="headerlink" href="#konparazioa-sorgailua-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<figure class="align-default" id="konparazioa-irteeran-1">
+<a class="reference internal image-reference" href="_images/Konparazioa_Irteeran_1.png"><img alt="_images/Konparazioa_Irteeran_1.png" src="_images/Konparazioa_Irteeran_1.png" style="height: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text"><a class="reference internal" href="ErrotoreenDiseinua.html#ediseinua1"><span class="std std-ref">1. Errotorea</span></a> erdibiturik erabiltzean, pala finkoen kutxa muntatuta duelarik, USB portuaren bidez ematen den tentsioa, haize-makina distantzia desberdinetara jartzean.</span><a class="headerlink" href="#konparazioa-irteeran-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<figure class="align-default" id="erreboluzioak2">
+<a class="reference internal image-reference" href="_images/Erreboluzioak2.png"><img alt="_images/Erreboluzioak2.png" src="_images/Erreboluzioak2.png" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text"><a class="reference internal" href="ErrotoreenDiseinua.html#ediseinua1"><span class="std std-ref">1. Errotorea</span></a> erdibiturik erabiltzean, pala finkoen kutxa muntatuta duelarik, errotorea biratzen ari den erreboluzio kopuruak, haize-makina distantzia desberdinetara jartzean.</span><a class="headerlink" href="#erreboluzioak2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Bestalde, ondorengoak dira errotorea erdibitu eta kutxa muntatu gabe erabiltzean lortzen diren emaitzak.</p>
+<p>Azkenik, errotoreari berriro estatore palen kutxa gehitzean ondoko emaitzak lortzen dira:</p>
+</section>
+<section id="id1">
+<h4>2. Errotorea<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+</section>
+<section id="id2">
+<h4>3. Errotorea<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+</section>
+</section>
 </section>
 <section id="eztabaida">
 <h2>Eztabaida<a class="headerlink" href="#eztabaida" title="Link to this heading">#</a></h2>
-<p>Contenido de la sección 1.</p>
-<section id="subseccion-1-1">
-<h3>Subsección 1.1<a class="headerlink" href="#subseccion-1-1" title="Link to this heading">#</a></h3>
-<p>Contenido de la subsección 1.1.</p>
-<section id="nota">
-<h4>Nota<a class="headerlink" href="#nota" title="Link to this heading">#</a></h4>
-<p>Esta es una nota importante relacionada con la subsección 1.1</p>
-</section>
-</section>
+<p>Haizearen abiaduraren neurketaren zatirik interesgarriena haize-makina metro erdi desplazatzeak haizearen abiaduran daukan eraginaz jabetzea da. Distantzia bakoitzean batezbesteko abiadura ondo desberdintzen da beste kasuetatik eta, beraz, egiten den probetan diferentziak behatzea posiblea izango da. Hala ere, sor daitezkeen fluktuazioek, balio maximoek islatzen dituztenek, muga kasuetan distantzia desberdinetara abiadura berdinak izatea posiblea egiten dute eta, beraz, egin diren beste neurketetan hau kontuan izan beharko da emaitzak aztertzean.</p>
+<p>Hau esanik, lehenengo errotorearekin egindako frogek…</p>
 </section>
 </section>
 
@@ -501,14 +604,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emaitza-esperimentalak">Emaitza Esperimentalak</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eztabaida">Eztabaida</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subseccion-1-1">Subsección 1.1</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#nota">Nota</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emaitza-esperimentalak">Emaitza Esperimentalak</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#haizearen-abiadura">Haizearen Abiadura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#erreboluzio-eta-tentsio-neurketak">Erreboluzio eta Tentsio Neurketak</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#errotorea">1. Errotorea</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2. Errotorea</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3. Errotorea</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eztabaida">Eztabaida</a></li>
 </ul>
   </nav></div>
 

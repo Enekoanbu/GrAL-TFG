@@ -50,76 +50,27 @@ Haizearen abiaduraren neurketak.
 ```
 Jarduera esperimentalaren lehenengo pausoa probak egiteko eremua markatzea da. Honetarako errotorearen oinarria jarriko den gunea markatu da eta marka hauetatik $1m$-ra, $1.5m$-ra, $2m$-ra, $2.5m$-ra eta $3m$-ra haize-makina kokatzeko beste bost marka jarri dira. Behin esperimentazio gunea prestaturik, haize-makinarekin sortzeko gai izango garen abiadurak neurtuko dira. Helburu hau betetzeko {numref}`HaizeAbiaduraFrogak` irudiko muntaia egin da, anemometroa sorgailu eolikoa kokatuko den tokian jarriz eta honen neurketak gordetzeko bideo-kamara bat ere jarriz.
 
-Abiaduraren neurketa fidagarri bat lortu al izateko, haize-makina 4 aldiz kokatu da posizio bakoitzean, saiakera guztietan pixka bat aldatuz makinaren posizioa edo orientazioa. Froga hauek lortutako balioen batezbestekoak makina kokatzean izan daitezkeen aldaketa txikiak islatzea ziurtatzen dute. Aipatu beharra da anemometroaren "*average*" modua erabili dela zeinak azkeneko lau segunduetako balioen batezbestekoa ematen duen. Posizio bakoitzean egin den lau saiakeretako bakoitzean 30 segundu inguruko tarteetan egin dira neurketak.
-
-<br>
-
-<br>
-
-<br>
-
-::::{grid}
-:::{grid-item}
-:outline:
-:columns: 6
-**Errotorearen eta haize-makinaren arteko distantzia**
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-**Haizearen bataz-besteko abiadura**
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-$1m$
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-D
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-$1.5m$
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-D
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-$2m$
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-D
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-2.5m
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-D
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-$3m$
-:::
-:::{grid-item}
-:outline:
-:columns: 6
-D
-:::
-::::
+Abiaduraren neurketa fidagarri bat lortu al izateko, haize-makina 4 edo 5 aldiz kokatu da posizio bakoitzean. Saiakera bakoitzean anemometroak ematen dituen datuak grabatu dira 15 segundu inguruko denbora tarte batean. Ondoren, saiakera bakoitzean lortutako batezbesteko balioa kalkulatzen da anemometroak segundu bakoitzean ematen duen balioa kontuan izanik eta, azkenik, errealtzat hartuko den balioa kalkulatzeko lortu diren emaitzen arteko batezbestekoa burutzen da berriro. Prozedura honen bidez haize-makinaren kokaleku edo orientazioa aldaketa txikiek haizearen abiaduran izan dezaketen eragina kontuan hartzea lortu da. 
 
 ## Erretore Desberdinekin Erreboluzio eta Tentsio Neurketak
+
+Jarduera esperimentalaren zati garrantzitsuena errotore mota desberdinekin haize-makinak sortzen duen abiadura bakoitzeko eraikitako prototipoak hartzen duen abiadura neurtzea eta honen ondorioz sortu dezakeen tentsioa behatzea izango da.
+
+```{figure} ./Irudiak/Proba2.png
+---
+height: 400px
+align: left
+name: Proba2
+---
+Erreboluzioen eta tentsioen neurketa egiteko muntaia.
+```
+
+{numref}`Proba2` irudian erakusten den muntaia egin da helburu hau betetzeko. Haize-korrontea ez eragozteko, neurketa tresna guztiak errotorearen alde batean kokatu dira. Takometroa errotoretik $20cm$ ingurura kokatu da eta neurketak ondo egiteko errotorean jarri den marka islatzailera zuzendu da. Bere balioak gordetzeko bere atzean jarri den bideo-kamera bat erabili da. Aldiz, tentsio datuak jasotzeko ordenagailua arduinora konektatu da eta aipaturiko **Putty** programa erabili da serie monitoreko datuak gordetzeko. Haize-makina aurreko atalean azaldu den posizioetan kokatuko da. 
+
+Gainera, gehigarri moduan, errotorearen funtzionamendua hobeto aztertzeko eta edozein arazoren zergatia jakiteko aukera izateko, errotorearen goiko oinarrian kokatutako **GoPro** kamera bat erabili da egin diren esperimentuetan errotoreak izan duen jarrera grabatzeko.
+
+Errotore desberdinei dagokienez, {ref}`EDiseinua` atalean aurkeztutako {ref}`EDiseinua1`, {ref}`EDiseinua2` eta {ref}`EDiseinua3` probatuko dira. Gainera, errotore bakoitzeko bi muntai egingo dira, bata errotorea osorik muntatuta eta bestea errotorea erdibiturik, zati bakoitza norabide elkarzut batean orientatuz. Honetaz gain, estatore finkoen kutxa muntatzeak izan dezakeen eragina ere aztertuko da eta, beraz, errotore mota bakoitzeko lau aukera desberdinekin egingo dira frogak.
+
+
+
 
