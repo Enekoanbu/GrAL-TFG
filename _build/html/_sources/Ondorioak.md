@@ -1,19 +1,13 @@
 # Ondorioak
 
-Breve introducción al capítulo.
+Ondorioen atalarekin hasteko, azpimarratu beharra da lan honetan soilik Savonius errotoreen hiru mota desberdin aztertzeko aukera izan dela, baina sorgailu eoliko honen diseinu sinpleak ikerketarako gune erraldoi bat irikitzen duela. Hala ere, hiru diseinuen artean egin diren aldaketa txikiak nahikoa izan dira jarduera esperimentalean diferentzia nabariak antzemateko.
 
-## Etorkizuneko Lanak
+Lehenik, hiru errotore motek probatu diren aldaera desberdinekiko jarrera oso desberdina dutela behatu da. Esaterako, lehenengo motaren kasuan, errotore erdibituarekin osoarekin baino balio hobeak neurtu dira, beste bi motekin gertatzen den kontrako joera erakutsiz. Lehenengo eta hirugarren moten kasuan, estatore palen egiturak ematen duen egonkortasunak lortutako balioak egokiagoak izatea eragiten du, hirugarrenaren kasuan probatu den haizearen abiadura geldoenera errotorea biratzen hasteko beharrezkoa izanik. Aldiz, bigarrenaren kasuan, egitura honek duen eragina oso txikia da eta, orokorrean, ez da positiboa.
 
-Contenido de la sección 1.
+Lan honetatik atera daitekeen ondorio garrantzitsuena Savonius errotoreen diseinu klasikoa zertxobait aldatuta energia elektrikoa sortzeko kapazitatea asko handitzen dela izan daiteke, bigarren errotorearen kasuan baieztatu den bezala. Errotore mota hau, eztabaidan aipatu den bezala, beste bi errotore motek sortzen duten energia elektriko berdina sortzeko gai izan da haize abiadura maila bat baxuagoarekin jardutean.
 
-### Subsección 1.1
+Gainera, energia sortzeko aldaera egokiena oso diseinu sinple baten bidez lortu da, ez du ez estatore palarik ez erdibituta muntatzeko beharrik. Sarreran azaldu den moduan, diseinu sinplea mantentzea oso onuragarria da produkzio prozesuak errazteko eta, esaterako, honek asko erreztuko luke garapen bidean dagoen herrialde batean horrelako sorgailu eolikoak inplementatzea. Errotoreaz gain, diseinu eta muntai prozesuaren bitartez, errotorea montatzeko nahikoa egitura erabilgarria eta sinplea eraiki da, egonkortasun maila egoki bat mantenduz norabidetasuna galdu gabe.
 
-Contenido de la subsección 1.1.
+Bestalde, frogatu da posiblea dela, eskala ertain batera (prototipoaren dimentsioak 54cm*54cmko oinarria eta 75cm-ko altuera dira) sorgailu eoliko erabilgarri bat eraikitzea. Honek etxeetan energia berriztagarriak erabiltzeko beste bide bat zabaltzen du.
 
-#### Nota
-
-Esta es una nota importante relacionada con la subsección 1.1
-
-## Eskerrak
-
-## Epilogoa
+Amaitzeko, gustatuko litzaidake azpimarratzea ardatz bertikaleko sorgailu eolikoen inguruan oraindik ikerketa ugari egiteko aukera dagoela eta hauen energia sortzeko gaitasunak ez duela Betz mugak aurresaten duen maximoa ikutu, hobekuntzarako toki asko egonik. Etorriko diren hobekuntza horiek, agian, etorkizun hurbil batean ardatz horizontaleko sorgailuak baino zabalduagoak egotera eraman ditzakete Savoniusak eta etxeetan gehien instalatzen den energia berriztagarriaren tokia kendu plaka fotovoltaikoei.
